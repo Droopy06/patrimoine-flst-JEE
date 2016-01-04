@@ -11,5 +11,6 @@ import java.util.List;
 public interface PatrimoineMapper {
 
     List<Table> findAll();
+    Table getListById(int id);
     void saveCollection(Table myTable);
 }

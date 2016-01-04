@@ -20,6 +20,11 @@ public class PatrimoineMapperImpl implements PatrimoineMapper{
     }
 
     @Override
+    public Table getListById(int id) {
+        return listCollection.get(id);
+    }
+
+    @Override
     public void saveCollection(Table myTable) {
         listCollection.add(myTable);
     }

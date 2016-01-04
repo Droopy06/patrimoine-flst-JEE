@@ -5,11 +5,17 @@ package patrimoine.controllers;
  */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+import patrimoine.classes.Case;
 import patrimoine.services.PatrimoineService;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Controller
@@ -18,7 +24,7 @@ public class Patrimoine {
     PatrimoineService patrimoineService;
 
     @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
-    public String list() {
+    public ModelAndView list() {
         if(patrimoineService.findAllData().size() == 0){
             List<List<String>> collection = new ArrayList<List<String>>();
             ArrayList<String> l=new ArrayList<>();
@@ -43,6 +49,16 @@ public class Patrimoine {
             collection.add(3, l3);
             patrimoineService.saveCollection(collection);
         }
-        return "patrimoine/index";
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("case", new Case());
+        model.put("case2", new Case());
+        //return "patrimoine/index";
+        return new ModelAndView("patrimoine/index",model);
+    }
+    @RequestMapping(value = { "/search/line", "/home" }, method = RequestMethod.POST)
+    public ModelAndView searchByLine(@Valid @ModelAttribute Case myCase, BindingResult results) {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("search", patrimoineService.rechercherLigne(myCase.getLigne()));
+        return new ModelAndView("patrimoine/searchLine",model);
     }
 }
