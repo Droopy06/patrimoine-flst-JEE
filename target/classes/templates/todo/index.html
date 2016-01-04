@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- fabien.meurillon@smile.fr -->
+        <title>Cours 3/10</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Cours 3/10</h1>
+        <table>
+            <thead>
+            <tr>
+                <td>Nom et état de la tache</td>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <form action="/todo/ajout/" name="todo" method="post">
+            <label>Nom de la tache</label>
+            <input type="text" name="nomTache" placeholder="nom de la tâche"/><br />
+            <label>Etat de la tâche: </label>
+            <select name="etatTache">
+                <option value="Non terminée">Non terminée</option>
+                <option value="Terminée">Terminée</option>
+            </select><br /><br />
+            <input type="submit" name="submit" value="Enregistrer"/>
+        </form>
+    </body>
+</html>
