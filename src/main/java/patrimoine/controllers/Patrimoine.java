@@ -58,7 +58,11 @@ public class Patrimoine {
     @RequestMapping(value = { "/search/line", "/home" }, method = RequestMethod.POST)
     public ModelAndView searchByLine(@Valid @ModelAttribute Case myCase, BindingResult results) {
         HashMap<String, Object> model = new HashMap<String, Object>();
-        model.put("search", patrimoineService.rechercherLigne(myCase.getLigne()));
+        try {
+            model.put("search", patrimoineService.rechercherLigne(myCase.getLigne()));
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         return new ModelAndView("patrimoine/searchLine",model);
     }
 }

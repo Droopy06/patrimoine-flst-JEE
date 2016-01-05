@@ -1,10 +1,13 @@
 package patrimoine.classes;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * Created by Alexandre LAMOOT on 13/11/15.
  */
 public class Case {
     private int ligne;
+    @NotNull
     private String column;
     private String data;
 
