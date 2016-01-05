@@ -55,14 +55,33 @@ public class Patrimoine {
         //return "patrimoine/index";
         return new ModelAndView("patrimoine/index",model);
     }
-    @RequestMapping(value = { "/search/line", "/home" }, method = RequestMethod.POST)
+    @RequestMapping(value = { "/search/line" }, method = RequestMethod.POST)
     public ModelAndView searchByLine(@Valid @ModelAttribute Case myCase, BindingResult results) {
         HashMap<String, Object> model = new HashMap<String, Object>();
-        try {
-            model.put("search", patrimoineService.rechercherLigne(myCase.getLigne()));
-        }catch (Exception e){
-            System.out.println(e.getMessage());
+        if(results.hasErrors()){
+            return new ModelAndView("redirect:/",model);
+        }else{
+
+            try {
+                model.put("search", patrimoineService.rechercherLigne(myCase.getLigne()));
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+            return new ModelAndView("patrimoine/searchLine",model);
         }
-        return new ModelAndView("patrimoine/searchLine",model);
+    }
+    @RequestMapping(value = { "/search/case" }, method = RequestMethod.POST)
+    public ModelAndView searchByCase(@Valid @ModelAttribute Case myCase, BindingResult results) {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        if(results.hasErrors()){
+            return new ModelAndView("redirect:/",model);
+        }else{
+            try {
+                model.put("search", patrimoineService.rechercheCase(myCase.getLigne(),myCase.getColumn()));
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+            return new ModelAndView("patrimoine/searchCase",model);
+        }
     }
 }

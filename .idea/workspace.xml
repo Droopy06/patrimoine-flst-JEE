@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="611564df-0f8d-42d6-aff6-f67734f1db0e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/PatrimoineRest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/classes/Case.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/classes/Case.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/models/PatrimoineMapper.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/models/PatrimoineMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/models/PatrimoineMapperImpl.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/models/PatrimoineMapperImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/services/PatrimoineService.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/services/PatrimoineService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/services/PatrimoineServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/services/PatrimoineServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchCase.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/classes/Case.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/classes/Case.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/Patrimoine.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/Patrimoine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/patrimoine/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/patrimoine/index.html" />
     </list>
     <ignored path="gs-spring-boot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,24 +35,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Patrimoine.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Patrimoine.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/Patrimoine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.66358024">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2241#2257#0" expanded="true" />
+                <element signature="e#2232#2248#0" expanded="true" />
+                <element signature="e#2877#2893#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchLine.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html">
+      <file leaf-file-name="PatrimoineServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5252525">
-              <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchCase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchCase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.0">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -70,12 +73,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/PatrimoineRest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchLine.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.7777777">
+              <caret line="41" column="116" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,8 +94,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="102" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="7" />
+            <state vertical-scroll-proportion="-3.3333333">
+              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -97,6 +108,8 @@
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,11 +148,12 @@
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/models/PatrimoineMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineService.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/classes/Case.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/PatrimoineRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/Patrimoine.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchCase.html" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/Patrimoine.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html" />
       </list>
     </option>
   </component>
@@ -962,12 +976,12 @@
       <workItem from="1451925303268" duration="1889000" />
       <workItem from="1451927755389" duration="1832000" />
       <workItem from="1451982120561" duration="2479000" />
-      <workItem from="1451992530167" duration="746000" />
+      <workItem from="1451992530167" duration="2930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15743000" />
+    <option name="totallyTimeSpent" value="17927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1360" height="741" extended-state="1" />
@@ -1013,7 +1027,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineServiceImpl.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1022,14 +1044,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="92" selection-start-line="19" selection-start-column="92" selection-end-line="19" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/PatrimoineRest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1056,6 +1070,8 @@
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1066,7 +1082,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2241#2257#0" expanded="true" />
+            <element signature="e#2232#2248#0" expanded="true" />
+            <element signature="e#2877#2893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,7 +1162,8 @@
           <caret line="58" column="74" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2241#2257#0" expanded="true" />
+            <element signature="e#2232#2248#0" expanded="true" />
+            <element signature="e#2877#2893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1195,7 +1213,8 @@
           <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2241#2257#0" expanded="true" />
+            <element signature="e#2232#2248#0" expanded="true" />
+            <element signature="e#2877#2893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1222,7 +1241,8 @@
           <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2241#2257#0" expanded="true" />
+            <element signature="e#2232#2248#0" expanded="true" />
+            <element signature="e#2877#2893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1240,6 +1260,8 @@
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1266,7 +1288,8 @@
           <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2241#2257#0" expanded="true" />
+            <element signature="e#2232#2248#0" expanded="true" />
+            <element signature="e#2877#2893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1284,6 +1307,8 @@
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1378,44 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="102" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/PatrimoineRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.8.RELEASE/spring-web-4.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5033557">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/classes/Case.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#660#661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/PatrimoineMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63580245">
@@ -1437,30 +1424,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7777777">
+          <caret line="41" column="116" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/classes/Case.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchCase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/PatrimoineRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.8.RELEASE/spring-web-4.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5503356">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/Patrimoine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.66358024">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2241#2257#0" expanded="true" />
+            <element signature="e#2232#2248#0" expanded="true" />
+            <element signature="e#2877#2893#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/searchLine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5252525">
-          <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
