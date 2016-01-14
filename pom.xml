@@ -50,6 +50,23 @@
             <artifactId>lombok</artifactId>
             <version>1.16.4</version>
         </dependency>
+        <!-- JSON start -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20141113</version>
+        </dependency>
+        <!-- JSON end -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>angularjs</artifactId>
+            <version>1.3.0-beta.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>angular-ui-router</artifactId>
+            <version>0.2.8</version>
+        </dependency>
     </dependencies>
 
     <properties>

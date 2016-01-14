@@ -25,6 +25,35 @@ public class PatrimoineServiceImpl implements PatrimoineService{
     }
 
     @Override
+    public void initializeData() {
+        if(this.findAllData().size() == 0){
+            List<List<String>> collection = new ArrayList<List<String>>();
+            ArrayList<String> l=new ArrayList<>();
+            l.add("nom");
+            l.add("age");
+            l.add("localité");
+            l.add("test");
+            collection.add(0, l);
+            ArrayList<String> l1=new ArrayList<>();
+            l1.add("loup");
+            l1.add("5");
+            l1.add("France");
+            collection.add(1,l1);
+            ArrayList<String> l2=new ArrayList<>();
+            l2.add("chat");
+            l2.add("10");
+            l2.add("Angleterre");
+            collection.add(2,l2);
+            ArrayList<String> l3=new ArrayList<>();
+            l3.add("");
+            l3.add("15");
+            l3.add("");
+            collection.add(3, l3);
+            this.saveCollection(collection);
+        }
+    }
+
+    @Override
     public void saveCollection(List<List<String>> collection) {
         Table myTable = new Table();
         myTable.remplirTable(collection);
@@ -52,4 +81,5 @@ public class PatrimoineServiceImpl implements PatrimoineService{
         }
         return maCase;
     }
+
 }

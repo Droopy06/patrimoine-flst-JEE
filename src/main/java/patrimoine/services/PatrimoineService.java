@@ -11,6 +11,7 @@ import java.util.List;
 public interface PatrimoineService {
 
     List<Table> findAllData();
+    void initializeData();
     void saveCollection(List<List<String>> collection);
     List<Case> rechercherLigne(int idLigneCherche);
     Case rechercheCase(int idLigneCherche,String columnCherche);
