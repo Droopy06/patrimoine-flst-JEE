@@ -25,7 +25,7 @@ public class Patrimoine {
 
     @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
     public ModelAndView list() {
-        patrimoineService.initializeData();
+        //patrimoineService.initializeData();
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("case", new Case());
         model.put("case2", new Case());
