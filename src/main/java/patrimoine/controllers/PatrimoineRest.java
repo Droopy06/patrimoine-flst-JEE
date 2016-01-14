@@ -1,6 +1,7 @@
 package patrimoine.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,6 +10,7 @@ import patrimoine.classes.Table;
 import patrimoine.services.PatrimoineService;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,6 +25,7 @@ public class PatrimoineRest {
     @Autowired
     public PatrimoineRest(PatrimoineService patrimoineService) {
         this.patrimoineService = patrimoineService;
+        this.patrimoineService.initializeData();
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -36,12 +39,26 @@ public class PatrimoineRest {
     }*/
 
     @RequestMapping(value = "/getcase",method = RequestMethod.POST)
-    public Case getCaseByLineAndColumn(@Valid @ModelAttribute Case myCase){
-        return patrimoineService.rechercheCase(myCase.getLigne(),myCase.getColumn());
+    public Case getCaseByLineAndColumn(@Valid @ModelAttribute Case myCase, BindingResult results){
+        if(!results.hasErrors()){
+            try {
+                return patrimoineService.rechercheCase(myCase.getLigne(),myCase.getColumn());
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        }
+        return new Case();
     }
 
     @RequestMapping(value = "/getline",method = RequestMethod.POST)
-    public List<Case> getCaseByLine(@Valid @ModelAttribute Case myCase){
-        return patrimoineService.rechercherLigne(myCase.getLigne());
+    public List<Case> getCaseByLine(@Valid @ModelAttribute Case myCase, BindingResult results){
+        if(!results.hasErrors()){
+            try {
+                return patrimoineService.rechercherLigne(myCase.getLigne());
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        }
+        return new ArrayList<Case>();
     }
 }

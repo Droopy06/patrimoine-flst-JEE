@@ -33,8 +33,8 @@ public class Patrimoine {
         return new ModelAndView("patrimoine/index",model);
     }
     @RequestMapping(value = { "/search/line" }, method = RequestMethod.POST)
-    public ModelAndView searchByLine(@Valid @ModelAttribute Case myCase, BindingResult results) {
-        HashMap<String, Object> model = new HashMap<String, Object>();
+    public void searchByLine(@Valid @ModelAttribute Case myCase, BindingResult results) {
+        /*HashMap<String, Object> model = new HashMap<String, Object>();
         if(results.hasErrors()){
             return new ModelAndView("redirect:/",model);
         }else{
@@ -45,7 +45,7 @@ public class Patrimoine {
                 System.out.println(e.getMessage());
             }
             return new ModelAndView("patrimoine/searchLine",model);
-        }
+        }*/
     }
     @RequestMapping(value = { "/search/case" }, method = RequestMethod.POST)
     public ModelAndView searchByCase(@Valid @ModelAttribute Case myCase, BindingResult results) {
