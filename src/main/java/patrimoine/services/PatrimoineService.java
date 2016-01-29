@@ -1,7 +1,7 @@
 package patrimoine.services;
 
-import patrimoine.classes.Case;
-import patrimoine.classes.Table;
+import patrimoine.models.Case;
+import patrimoine.models.Table;
 
 import java.util.List;
 

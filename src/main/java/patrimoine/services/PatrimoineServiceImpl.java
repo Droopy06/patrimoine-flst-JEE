@@ -2,9 +2,9 @@ package patrimoine.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import patrimoine.classes.Case;
-import patrimoine.classes.Table;
-import patrimoine.models.PatrimoineMapper;
+import patrimoine.models.Case;
+import patrimoine.models.Table;
+import patrimoine.dao.PatrimoineMapper;
 
 import java.util.ArrayList;
 import java.util.List;

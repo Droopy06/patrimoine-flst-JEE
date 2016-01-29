@@ -1,6 +1,6 @@
-package patrimoine.models;
+package patrimoine.dao;
 
-import patrimoine.classes.Table;
+import patrimoine.models.Table;
 
 import java.util.List;
 

@@ -10,16 +10,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import patrimoine.classes.Case;
+import patrimoine.models.Case;
 import patrimoine.services.PatrimoineService;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 @Controller
-public class Patrimoine {
+public class MainController {
     @Autowired
     PatrimoineService patrimoineService;
 

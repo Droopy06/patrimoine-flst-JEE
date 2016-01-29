@@ -5,8 +5,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import patrimoine.classes.Case;
-import patrimoine.classes.Table;
+import patrimoine.models.Case;
 import patrimoine.services.PatrimoineService;
 
 import javax.validation.Valid;
@@ -18,12 +17,12 @@ import java.util.List;
  */
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("/rest/patrimone")
-public class PatrimoineRest {
+public class SearchRestController {
 
     private final PatrimoineService patrimoineService;
 
     @Autowired
-    public PatrimoineRest(PatrimoineService patrimoineService) {
+    public SearchRestController(PatrimoineService patrimoineService) {
         this.patrimoineService = patrimoineService;
         this.patrimoineService.initializeData();
     }

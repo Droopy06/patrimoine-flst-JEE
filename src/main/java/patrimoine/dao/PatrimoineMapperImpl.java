@@ -1,7 +1,7 @@
-package patrimoine.models;
+package patrimoine.dao;
 
 import org.springframework.stereotype.Repository;
-import patrimoine.classes.Table;
+import patrimoine.models.Table;
 
 import java.util.ArrayList;
 import java.util.List;

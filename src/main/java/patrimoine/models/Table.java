@@ -1,4 +1,4 @@
-package patrimoine.classes;
+package patrimoine.models;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package patrimoine.classes;
+package patrimoine.models;
 
 import javax.validation.constraints.NotNull;
 
