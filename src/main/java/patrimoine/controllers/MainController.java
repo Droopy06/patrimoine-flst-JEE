@@ -28,7 +28,7 @@ public class MainController {
         model.put("case", new Case());
         model.put("case2", new Case());
         //return "patrimoine/index";
-        return new ModelAndView("patrimoine/index",model);
+        return new ModelAndView("patrimoine/accueil",model);
     }
     @RequestMapping(value = { "/search/line" }, method = RequestMethod.POST)
     public void searchByLine(@Valid @ModelAttribute Case myCase, BindingResult results) {
