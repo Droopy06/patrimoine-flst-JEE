@@ -23,8 +23,8 @@ public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-        /*ApplicationContext ctx = new AnnotationConfigApplicationContext(DatabaseConfiguration.class);
-        MongoOperations mongoOperation = (MongoOperations)ctx.getBean("mongoTemplate");*/
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(DatabaseConfiguration.class);
+        MongoOperations mongoOperation = (MongoOperations)ctx.getBean("mongoTemplate");
         /*MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
 
         // Now connect to your databases

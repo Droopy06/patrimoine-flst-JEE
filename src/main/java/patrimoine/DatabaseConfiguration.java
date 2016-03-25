@@ -27,7 +27,7 @@ public class DatabaseConfiguration extends AbstractMongoConfiguration {
     //@Value("${spring.data.mongodb.host}")
     private final static String host = "127.0.0.1";
     //@Value("${spring.data.mongodb.port}")
-    private final static Integer port = 12017;
+    private final static Integer port = 27017;
     //@Value("${spring.data.mongodb.username}")
     private final static String username = "patrimoine";
     //@Value("${spring.data.mongodb.database}")
