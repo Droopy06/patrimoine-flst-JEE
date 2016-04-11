@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import patrimoine.models.Case;
-import patrimoine.services.PatrimoineService;
+import patrimoine.models.Collection;
+import patrimoine.models.Evenement;
+import patrimoine.services.CollectionService;
+import patrimoine.services.EvenementService;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
@@ -19,29 +22,32 @@ import java.util.List;
 @RequestMapping("/rest/patrimone")
 public class SearchRestController {
 
-    private final PatrimoineService patrimoineService;
+    @Autowired
+    CollectionService collectionService;
+    @Autowired
+    EvenementService evenementService;
 
     @Autowired
-    public SearchRestController(PatrimoineService patrimoineService) {
-        this.patrimoineService = patrimoineService;
-        this.patrimoineService.initializeData();
+    public SearchRestController(CollectionService collectionService) {
+        this.collectionService = collectionService;
+        List<Collection> collectionList = this.collectionService.findAllData();
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public void create(List<List<String>> maListe) {
-        patrimoineService.saveCollection(maListe);
+    @RequestMapping(value = "/collections",method = RequestMethod.GET)
+    public List<Collection> getAllCollections(){
+        return collectionService.findAllData();
     }
 
-    /*@RequestMapping(method = RequestMethod.POST)
-    public List<Table> listData(){
-        return patrimoineService.findAllData();
-    }*/
+    @RequestMapping(value = "/evenements",method = RequestMethod.GET)
+    public List<Evenement> getAllEvenements(){
+        return evenementService.findAllData();
+    }
 
     @RequestMapping(value = "/getcase",method = RequestMethod.POST)
     public Case getCaseByLineAndColumn(@Valid @ModelAttribute Case myCase, BindingResult results){
         if(!results.hasErrors()){
             try {
-                return patrimoineService.rechercheCase(myCase.getLigne(),myCase.getColumn());
+                return collectionService.rechercheCase(myCase.getLigne(),myCase.getColumn());
             }catch (Exception e){
                 System.out.println(e.getMessage());
             }
@@ -53,7 +59,7 @@ public class SearchRestController {
     public List<Case> getCaseByLine(@Valid @ModelAttribute Case myCase, BindingResult results){
         if(!results.hasErrors()){
             try {
-                return patrimoineService.rechercherLigne(myCase.getLigne());
+                return collectionService.rechercherLigne(myCase.getLigne());
             }catch (Exception e){
                 System.out.println(e.getMessage());
             }
