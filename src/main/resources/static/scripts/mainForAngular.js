@@ -1,53 +1,32 @@
 'use strict';
+var URLS = {};
+URLS.evenements = /*[[@{/rest/patrimone/evenementss}]]*/ '/rest/patrimone/evenements';
+var baseUrl = 'http://localhost:8080/patrimoine/';
 
 var museeHome = angular.module('app', []);
-
-var evenement01 = {titre: 'Evénement 01',miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",imageuri: "images/Evenements/evenement01.png",miniimageuri: "../images/Evenements/evenement01mini.png", twitter: "#!",facebook: "#!", go: "#!"}
-var evenement02 = {
-	titre: 'Evénement 02',
-	miniDescr: "Ceci est un exemple d'événement de niveau 2 (avec une image de taille moyenne)",
-	imageuri: "images/Evenements/evenement02.png",
-	miniimageuri: "../images/Evenements/evenement02mini.png",
-	twitter: "#!",
-	facebook: "#!",
-	go: "#!",
-}
-var evenement03 = {
-	titre: 'Evénement 03',
-	miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",
-	imageuri: "images/Evenements/evenement03.png",
-	miniimageuri: "../images/Evenements/evenement03mini.png",
-	twitter: "#!",
-	facebook: "#!",
-	go: "#!",
-}
-var evenement04 = {
-	titre: 'Evénement 04',
-	miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",
-	imageuri: "images/Evenements/evenement04.png",
-	miniimageuri: "../images/Evenements/evenement04mini.png",
-	twitter: "#!",
-	facebook: "#!",
-	go: "#!",
-}
-var evenement05 = {
-	titre: 'Evénement 05',
-	miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",
-	imageuri: "images/Evenements/evenement05.png",
-	miniimageuri: "../images/Evenements/evenement05mini.png",
-	twitter: "#!",
-	facebook: "#!",
-	go: "#!",
-}
-
-var evenementsListe = [evenement01, evenement02, evenement03, evenement04, evenement05];
-
-/*Initialisation de la gestion dynamique des événements*/
-museeHome.controller('EvenementsListCtrl', function ($scope) {
-	$scope.Evenements = evenementsListe;
+var evenementsListe = [];
+var evenementsAccueilListe = [];
+$(document).ready(function () {
+	$.getJSON(baseUrl+URLS.evenements, function (data) {
+		//alert(data);
+		//evenementsListe = data;
+		museeHome.$scope.evenementsAccueilListe = museeHome.$scope.data;
+		//evenementsAccueilListe = [evenementsListe[0],evenementsListe[1],evenementsListe[2],evenementsListe[3]];
+		//alert(evenementsListe);
+	})
 });
+var evenement01 = {titre: 'Evénement 01',miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",imageuri: "images/Evenements/evenement01.png",miniimageuri: "images/Evenements/evenement01mini.png", twitter: "#!",facebook: "#!", go: "#!"}
+var evenement02 = {titre: 'Evénement 02',miniDescr: "Ceci est un exemple d'événement de niveau 2 (avec une image de taille moyenne)",imageuri: "images/Evenements/evenement02.png",	miniimageuri: "images/Evenements/evenement02mini.png",twitter: "#!",	facebook: "#!",	go: "#!"}
+var evenement03 = {titre: 'Evénement 03',miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",imageuri: "images/Evenements/evenement03.png",miniimageuri: "images/Evenements/evenement03mini.png",twitter: "#!",facebook: "#!",	go: "#!"}
+var evenement04 = {titre: 'Evénement 04',miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",imageuri: "images/Evenements/evenement04.png",	miniimageuri: "images/Evenements/evenement04mini.png",	twitter: "#!",facebook: "#!",go: "#!"}
+var evenement05 = {titre: 'Evénement 05',miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",imageuri: "images/Evenements/evenement05.png",miniimageuri: "images/Evenements/evenement05mini.png",twitter: "#!",facebook: "#!",go: "#!"}
 
-var evenementsAccueilListe = [evenement01, evenement02, evenement03, evenement04];
+//var evenementsAccueilListe = [{titre: 'Evénement 01',miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",imageuri: "images/Evenements/evenement01.png",miniimageuri: "images/Evenements/evenement01mini.png", twitter: "#!",facebook: "#!", go: "#!"},{titre: 'Evénement 02',miniDescr: "Ceci est un exemple d'événement de niveau 2 (avec une image de taille moyenne)",imageuri: "images/Evenements/evenement02.png",	miniimageuri: "images/Evenements/evenement02mini.png",twitter: "#!",	facebook: "#!",	go: "#!"},{titre: 'Evénement 03',miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",imageuri: "images/Evenements/evenement03.png",miniimageuri: "images/Evenements/evenement03mini.png",twitter: "#!",facebook: "#!",	go: "#!"},{titre: 'Evénement 04',miniDescr: "Ceci est un exemple d'événement de niveau 3 (avec une petite image)",imageuri: "images/Evenements/evenement04.png",	miniimageuri: "images/Evenements/evenement04mini.png",	twitter: "#!",facebook: "#!",go: "#!"}];
+/*Initialisation de la gestion dynamique des événements*/
+/*museeHome.controller('EvenementsListCtrl', function ($scope) {
+	$scope.Evenements = evenementsListe;
+});*/
+
 
 
 museeHome.controller("evenement01", function($scope) {

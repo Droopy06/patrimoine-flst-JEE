@@ -2,95 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="611564df-0f8d-42d6-aff6-f67734f1db0e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/models/Collection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/models/Objet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/dao/PatrimoineMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/dao/PatrimoineMapperImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/accueil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/patrimoine/services/PatrimoineService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/patrimoine/services/PatrimoineServiceImpl.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineService.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Projets images/banniere.xcf" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Projets images/banniere.xcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/banniere.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/banniere.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/Application.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/Application.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-spring-boot.iml" afterPath="$PROJECT_DIR$/gs-spring-boot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/Application.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/SearchRestController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/SearchRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css" afterPath="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css.map" afterPath="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/JQuery-2.1.4/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/JQuery-2.1.4/jquery-2.1.4.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/LICENSE" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/README.md" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/font/material-design-icons/LICENSE.txt" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/font/material-design-icons/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/font/material-design-icons/Material-Design-Icons.svg" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/font/material-design-icons/Material-Design-Icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/animation.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/bin/materialize.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/bin/materialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/bin/materialize.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/bin/materialize.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/buttons.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/buttons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/cards.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/cards.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/character_counter.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/character_counter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/chips.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/chips.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/collapsible.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/collapsible.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/date_picker/picker.date.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/date_picker/picker.date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/date_picker/picker.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/date_picker/picker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/dropdown.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/forms.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/forms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/global.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/jquery.easing.1.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/jquery.hammer.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/jquery.hammer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/leanModal.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/leanModal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/materialbox.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/materialbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/parallax.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/parallax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/pushpin.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/pushpin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/scrollFire.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/scrollFire.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/scrollspy.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/scrollspy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/sideNav.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/sideNav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/slider.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/tabs.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/tabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/toasts.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/toasts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/tooltip.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/transitions.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/transitions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/velocity.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/velocity.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/waves.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/js/waves.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_buttons.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_cards.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_cards.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_chips.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_chips.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_collapsible.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_collapsible.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_color.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_color.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_dropdown.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_dropdown.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_form.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_form.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_global.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_grid.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_icons-material-design.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_icons-material-design.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_materialbox.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_materialbox.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_mixins.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_modal.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_modal.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_navbar.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_normalize.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_normalize.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_prefixer.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_prefixer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_preloader.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_preloader.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_roboto.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_roboto.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_sideNav.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_sideNav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_slider.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_slider.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_table_of_contents.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_table_of_contents.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_tabs.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_tabs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_toast.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_toast.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_tooltip.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_tooltip.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_typography.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_variables.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_waves.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/_waves.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/date_picker/_default.date.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/date_picker/_default.date.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/date_picker/_default.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/date_picker/_default.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/date_picker/_default.time.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/components/date_picker/_default.time.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/materialize.scss" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/materialize-src/sass/materialize.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js" />
     </list>
     <ignored path="gs-spring-boot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,15 +39,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchRestController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/SearchRestController.java">
+      <file leaf-file-name="CollectionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+              <folding>
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="e#1250#1251#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-              </folding>
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvenementMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,19 +153,21 @@
         <option value="$USER_HOME$/Downloads/sitepatrimoine_V3.0/sitepatrimoine/site/scripts/mainForAngular.js" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineService.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/PatrimoineServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java" />
         <option value="$USER_HOME$/Downloads/sitepatrimoine_V3.1/sitepatrimoine/site/scripts/mainForAngular.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/models/Collection.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/SearchRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js" />
       </list>
     </option>
   </component>
@@ -218,7 +191,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -268,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -304,302 +278,9 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1088,46 +769,52 @@
       <workItem from="1458217347218" duration="7064000" />
       <workItem from="1458900481464" duration="2719000" />
       <workItem from="1458908983584" duration="157000" />
-      <workItem from="1460401626986" duration="7834000" />
+      <workItem from="1460401626986" duration="8086000" />
+      <workItem from="1460434714230" duration="238000" />
+      <workItem from="1460474823526" duration="5229000" />
+      <workItem from="1460636276824" duration="1502000" />
+      <workItem from="1460701945020" duration="10799000" />
+      <workItem from="1460720965080" duration="61000" />
+      <workItem from="1462958778581" duration="913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52551000" />
+    <option name="totallyTimeSpent" value="71545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35897437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44615385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44615385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34871796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1177,7 +864,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java</url>
-          <line>80</line>
+          <line>90</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1191,14 +878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1224,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1302,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="ResourceBundle">
@@ -1320,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="ResourceBundle">
@@ -1345,18 +1021,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/accueil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/accueil.html" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1379,27 +1047,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/PatrimoineMapperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/sitepatrimoine_V3.0/sitepatrimoine/site/scripts/mainForAngular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="109" column="40" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/PatrimoineMapperImpl.java" />
+    <entry file="file://$USER_HOME$/Downloads/sitepatrimoine_V3.0/sitepatrimoine/site/scripts/mainForAngular.js" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,7 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1423,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="510" column="0" selection-start-line="510" selection-start-column="0" selection-end-line="510" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1431,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,22 +1106,7 @@
           <Categories>
             <Category>Show filesets as groups</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1480,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1488,23 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="34" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="159" column="77" selection-start-line="159" selection-start-column="77" selection-end-line="159" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1516,57 +1132,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="269" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,31 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Objet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1606,20 +1150,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
-            <marker date="1458217315425" expanded="true" signature="125:133" placeholder="patrimoine" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Objet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/SearchRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding>
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

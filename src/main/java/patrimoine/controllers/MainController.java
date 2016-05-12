@@ -29,7 +29,6 @@ public class MainController {
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("case", new Case());
         model.put("case2", new Case());
-        List<Collection> collectionList = collectionService.findAllData();
         //return "patrimoine/index";
         return new ModelAndView("patrimoine/Home",model);
     }

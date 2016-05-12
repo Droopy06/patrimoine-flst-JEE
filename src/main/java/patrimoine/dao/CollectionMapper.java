@@ -1,9 +1,7 @@
 package patrimoine.dao;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Repository;
 import patrimoine.models.Collection;
-import patrimoine.models.Table;
 
 import java.util.List;
 
@@ -12,6 +10,8 @@ import java.util.List;
  */
 public interface CollectionMapper extends MongoRepository<Collection, String > {
     List<Collection> findAll();
+    Collection save(Collection collection);
+    void delete(Collection collection);
    /* Table getListById(int id);
     void saveCollection(Table myTable);*/
 }

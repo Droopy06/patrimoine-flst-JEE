@@ -38,6 +38,19 @@ public class SearchRestController {
         return collectionService.findAllData();
     }
 
+    @RequestMapping(value = "/collection/save",method = RequestMethod.POST)
+    public Collection saveCollection(@Valid @ModelAttribute Collection collection,
+                                           BindingResult bindingResult){
+        if(!bindingResult.hasErrors()){
+            try {
+                return collectionService.save(collection);
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        }
+        return new Collection();
+    }
+
     @RequestMapping(value = "/evenements",method = RequestMethod.GET)
     public List<Evenement> getAllEvenements(){
         return evenementService.findAllData();

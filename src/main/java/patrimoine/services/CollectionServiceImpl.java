@@ -23,6 +23,16 @@ public class CollectionServiceImpl implements CollectionService {
         return collectionMapper.findAll();
     }
 
+    @Override
+    public Collection save(Collection collection) {
+        return collectionMapper.save(collection);
+    }
+
+    @Override
+    public void delete(Collection collection) {
+        collectionMapper.delete(collection);
+    }
+
     /*@Override
     public void initializeData() {
         if(this.findAllData().size() == 0){

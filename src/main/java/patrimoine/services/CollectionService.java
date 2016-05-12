@@ -11,6 +11,8 @@ import java.util.List;
 public interface CollectionService {
 
     List<Collection> findAllData();
+    Collection save(Collection collection);
+    void delete(Collection collection);
     /*void initializeData();
     void saveCollection(List<List<String>> collection);*/
     List<Case> rechercherLigne(int idLigneCherche);
