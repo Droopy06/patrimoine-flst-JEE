@@ -1,0 +1,413 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+
+ $primary-color: black;
+ $primary-color-light: lighten( $primary-color, 15% );
+
+ $secondary-color: #ffa800;
+ $secondary-color-light: lighten( $secondary-color, 20% );
+ $secondary-color-dark: darken( $secondary-color, 20% );
+
+ $third-color: white;
+ $third-color-dark: darken( $third-color, 20%);
+
+ $secondary-complementary-color: #1142AA;
+ $secondary-complementary-color-light: lighten( $secondary-complementary-color, 20% );
+
+ $care-color: #DE6461;
+
+ $ok-color: #4CAF50;
+
+ $defaultLabel-color: #9e9e9e;
+
+ @font-face {
+  font-family: 'Chromia';
+  src: url('../fonts/CHROMIA.OTF');
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body{
+ width: 100%;
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+ background-color: $third-color-dark;
+ font-family: 'Roboto';
+ overflow: auto !important; /*Empêche la scrollbar de disparaître quand une modal s'ouvre*/
+}
+
+header{
+  height: 20%;
+  z-index: 2;
+}
+
+footer{
+  z-index: 2;
+}
+
+main {
+  flex: 1 0 auto;
+  font-family: 'Roboto';
+}
+
+h1{
+  font-family: 'Chromia';
+  color: $secondary-color;
+  font-size: 3em;
+}
+
+h2{
+  font-family: 'Chromia';
+  color: $primary-color-light;
+  font-size: 2em;
+}
+
+h4{
+  font-family: 'Chromia';
+  color: $secondary-color;
+  margin-bottom: 5px;
+}
+
+p{
+  font-family: 'Roboto';
+}
+
+a{
+  font-family: 'Roboto';
+}
+
+input[type=text]:focus:not([readonly]){
+  border-bottom: solid 1px $secondary-complementary-color;
+  box-shadow: 0 1px 0 0 $secondary-complementary-color;
+}
+
+.input-field input[type=text].invalid {
+     border-bottom: 1px solid $care-color;
+     box-shadow: 0 1px 0 0 $care-color;
+   }
+
+.input-field label{
+  color: $defaultLabel-color !important;
+}
+
+textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: solid 1px $secondary-complementary-color;
+  box-shadow: 0 1px 0 0 $secondary-complementary-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.firstRow{
+  margin-top: 15vh;
+}
+
+.container .row {
+  margin: 0;
+}
+
+.banniere{
+ position: fixed;
+ width: 100%;
+ height: 15%;
+ margin-bottom: 5%;
+ background-color: $primary-color;
+ z-index: 5;
+}
+
+.searchBar {
+  position: relative;
+  bottom: -25px;
+}
+
+.largeSearchBar{
+  margin-top: -60px;
+}
+
+.input-field input[type=search] {
+  width: calc(100% - 0rem);
+  color: $third-color-dark;
+  border-bottom: 1px solid $third-color-dark;
+  padding-left: 10px;
+}
+
+.input-field input[type=search]:focus {
+  background-color: $third-color-dark;
+}
+
+.siteMap{
+  background-color: $primary-color-light;
+  color: $third-color-dark;
+  z-index: 0;
+}
+
+footer.page-footer {
+ height: 5%;
+ background-color: transparent;
+ margin-top: 0;
+ padding-top: 0;
+}
+
+.copyright{
+ background-color: $primary-color;
+}
+
+.footer-copyright {
+  z-index: 6;
+}
+
+.secondaryColor{
+ color: $secondary-color;
+}
+
+.nav-pane {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  position: fixed;
+  -webkit-transform: translateX(-350px);
+  transform: translateX(-350px);
+  z-index: 5;
+  top: 15%;
+  height: 85vh;
+  background: $primary-color;
+  border-right: 3px solid $secondary-color;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  box-shadow: 0px 3px 10px rgba(33, 33, 33, 0.5);
+}
+@media screen and (max-width: 620px) {
+  .nav-pane {
+    width: 298px;
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+}
+.nav-pane a p {
+  margin: 0;
+  text-align: center;
+  color: $third-color;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transition: color 0.5s ease-in-out;
+}
+
+.nav-pane a p:hover,
+.nav-pane a p:focus{
+  margin: 0;
+  text-align: center;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.nav-pane.open {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.toggle-nav {
+  position: relative;
+  cursor: pointer;
+  color: $third-color;
+  width: 125px;
+  font-family: 'Chromia';
+}
+.toggle-nav.open span.m, .toggle-nav.open span.n, .toggle-nav.open span.u {
+  opacity: 1;
+}
+.toggle-nav span.m, .toggle-nav span.n, .toggle-nav span.u {
+  font-size: 2rem;
+  opacity: 1;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  letter-spacing: 2px;
+}
+.toggle-nav span.e {
+  display: inline-block;
+  height: 24px;
+  width: 28px;
+}
+.toggle-nav span.e.btn-close span.bar:nth-child(1) {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 9px;
+}
+.toggle-nav span.e.btn-close span.bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+.toggle-nav span.e.btn-close span.bar:nth-child(3) {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+.toggle-nav span.e span.bar {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  position: relative;
+  display: block;
+  background: none;
+  border-radius: 3px;
+  border-bottom: 3px solid $secondary-complementary-color;
+  width: 25px;
+  height: 7px;
+}
+.toggle-nav span.e span.bar:nth-child(2) {
+  margin: 1px 0;
+}
+
+.toggle-nav:hover span.m, .toggle-nav:hover span.n, .toggle-nav:hover span.u {
+  opacity: 1;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.info-panel{
+  background-color: $primary-color;
+  color: $third-color;
+  margin: 20px;
+}
+
+.info-panel h1 {
+  color: $secondary-color;
+  margin-bottom: 5px;
+}
+
+.card-image{
+  z-index: 0;
+}
+
+.card-reveal {
+  background-color: $primary-color;
+  margin: -20px;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.card .card-reveal {
+	background-color: transparent;
+}
+
+.card-title {
+	color: $secondary-color;
+  background-color: $primary-color;
+  opacity: 0.9;
+}
+
+.card-title h1{
+	font-size: 1.2em;
+  top: 0;
+}
+
+.card-title .iconsZone{
+	width: 50%;
+  margin-left: 8%;
+}
+
+.card-content{
+  background-color: $primary-color;
+  opacity: 1;
+  margin-top: -10px;
+  margin-right: -100px;
+  padding-right: -20px;
+}
+
+.card-reveal .card-content p{
+	color: $third-color;
+}
+
+.bannierImg{
+  height: 100px;
+}
+
+.titrePage{
+  text-shadow: 2px 2px $primary-color;
+}
+
+.titrePage .input-field input{
+  font-family: 'Chromia';
+  color: $secondary-color;
+  font-size: 3em;
+  text-shadow: 2px 2px $primary-color;
+  padding-bottom: 10px;
+}
+
+.l4 .l12 h2{
+  margin-top: 20px;
+}
+
+.imgBlocks{
+  padding-bottom: 30px;
+}
+
+.toggle-footer {
+  cursor: pointer;
+  color: $third-color;
+}
+
+.hidden{
+  display: none;
+}
+
+.footer-pane{
+  padding-bottom: 30px;
+}
+
+.modal{
+  margin-top: 5%;
+}
+
+.dropdown-content li>span{
+  color: $secondary-complementary-color;
+}
+
+.attention{
+  color: $care-color;
+}
+
+.modalCare{
+  cursor: help;
+}
+
+.file-field .btn{
+  background-color: $secondary-complementary-color;
+}
+
+.file-field .btn:hover, .file-field .btn:focus{
+  background-color: $secondary-complementary-color-light;
+}
+
+.file-field .btn input{
+  cursor: pointer;
+}
+
+#newModal div .input-field label{
+  cursor: help;
+}

@@ -1,0 +1,30 @@
+      <div  ng-controller="Collection07PageCtrl as collection07PageCtrl">
+        <div class="row firstRow">
+          <div class="col l12 s12 titrePage">
+            <h1 class="center">{{collection07PageCtrl.Titre}}</h1>
+          </div>
+        </div>
+
+
+        <div class="row" ng-repeat="Objet in collection07PageCtrl.Objets">
+          <div class="col l2 m2 s4">
+            <a href="{{Objet.uri}}"><img class="responsive-img" src="{{Objet.img}}" alt="{{Objet.titre}}" title="{{Objet.titre}}"/></a>
+          </div>
+          <div class="col l10 m10 s8">
+            <a href="{{Objet.uri}}"><h2>{{Objet.titre}}</h2></a>
+            <br/>
+            <p>
+              {{Objet.description1}}
+            </p>
+            <br/>
+            <p>
+              {{Objet.description2}}
+            </p>
+            <br/>
+            <p>
+              {{Objet.description3}}
+            </p>
+          </div>
+        </div>
+      </div>
+      

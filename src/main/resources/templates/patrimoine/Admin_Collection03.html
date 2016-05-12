@@ -1,200 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="app">
-<head  ng-controller="Collection03PageCtrl">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html lang="fr" ng-app="sitePatrimoine">
+  <head ng-controller="Collection03PageCtrl as c03PageCtrl">
+    <meta charset="utf-8"/>
 
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="../vendors/materialize-src/css/materialize.min.css">
+    <link rel="import" href="PartialPages/_head.html">
+    
+    <title>MuséH@me - {{c03PageCtrl.Titre}}</title>
+    <link rel="shortcut icon" href="../images/icone.png"/>
+  </head>
 
-  <!-- My css -->
-  <link rel="stylesheet" href="../stylesheets/ie.css">
-  <link rel="stylesheet" href="../stylesheets/print.css">
-  <link rel="stylesheet" href="../stylesheets/screen.css">
+  <body>
+    <header admin-header-content>
+    </header>
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Musée H@me - {{Titre}}</title>
-  <link rel="shortcut icon" href="../images/icone.png">
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="row banniere">
-        <div class="row">
-          <div class="col l3 m3 s6">
-            <a href="Admin_Home.html"><img class="responsive-img" src="../images/banniere.png" alt="Accueil" title="Accueil"/></a>
-          </div>
-          <div class="col l3 m3 s6 offset-l1 offset-m1">
-            <img class="responsive-img" src="../images/Admin_.png" alt="Accueil" title="Accueil"/>
-          </div>
-          <div class="col l2 m2 offset-l3 offset-m3 offset-s2 hide-on-small-and-down">
-            <div class="col l10 m10 s12 offset-l2 offset-m2">
-              <a href="http://lesfacultes.univ-catholille.fr/" target="blank"><img class="responsive-img" src="../images/logoH_FACULTES_blanc.png" alt="ICL" title="ICL"/></a>
-            </div>
-          </div>
+    <main ng-controller="Collection03PageCtrl as c03PageCtrl">        
+      <div admin-collection03-content>
         </div>
-
-        <div class="row">
-          <div class="col l1 m1 s4">
-            <div class="toggle-nav">
-              <span class="m">M</span><span class="e"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span><span class="n">N</span><span class="u">U</span>
-            </div>
-          </div>
-
-          <div class="col l3 offset-l8 hide-on-med-and-down">
-            <form class="searchBar largeSearchBar">
-              <div class="input-field">
-                <input id="search" type="search" class="truncate" required>
-                <label for="search"><i class="material-icons">search</i></label>
-              </div>
-            </form>
-          </div>
-        </div>
+      <div admin-haut-footer-content>
       </div>
-    </div>
+    </main>
 
-<div class="row">
-  <div class="nav-pane slide-out col l2 m3 s6">
-    <div class="col l11 m12 s12 hide-on-large-only">
-      <form class="searchBar">
-        <div class="input-field">
-          <input id="search" type="search" class="truncate" required>
-          <label for="search"><i class="material-icons">search</i></label>
-        </div>
-      </form>
-    </div>
-    <a href="Admin_Collections.html"><p>Collections</p></a>
-    <a href="#!"><p>Histoire</p></a>
-    <a href="#!"><p>Expositions</p></a>
-    <a href="#!"><p>Evénements</p></a>
-    <a href="#!"><p>Ateliers</p></a>
-    <a href="#!"><p>Partenaires</p></a>
-    <br>
-  </div>
-</div>
-</header>
-
-<main ng-controller="Collection03PageCtrl">        
-  <div class="row firstRow">
-    <div class="col l12 s12 titrePage">
-      <h1 class="center">{{Titre}}</h1>
-    </div>
-  </div>
-
-
-  <div class="row" ng-repeat="Objet in Objets">
-    <div class="col l2 m2 s4">
-      <a href="{{Objet.uriadmin}}"><img class="responsive-img" src="{{Objet.img}}" alt="{{Objet.titre}}" title="{{Objet.titre}}"/></a>
-    </div>
-    <div class="col l10 m10 s8">
-      <a href="{{Objet.uriadmin}}"><h2>{{Objet.titre}}</h2></a>
-      <br/>
-      <p>
-        {{Objet.description1}}
-      </p>
-      <br/>
-      <p>
-        {{Objet.description2}}
-      </p>
-      <br/>
-      <p>
-        {{Objet.description3}}
-      </p>
-    </div>
-  </div>
-
- <!-- partie haute du footer -->
-  <div class="container siteMap" id="hautFooter">
-    <div class="row">
-      <i class="medium material-icons col l1 m1 s2 offset-l6 offset-m6 offset-s5 toggle-footer">keyboard_arrow_up</i>
-      <i class="medium material-icons col l1 m1 s2 offset-l6 offset-m6 offset-s5 toggle-footer hidden">keyboard_arrow_down</i>
-    </div>
-    <div class="footer-pane hidden">
-      <div class="row">
-        <div class="col l4 offset-l1 m4 offset-m1 s12">
-          <a href="Admin_Collections.html" class="col l12 s12"><h4 class="center-align">Collections</h4></a>
-          <ul class="col l12 m12 s12"  ng-controller="CollectionListCtrl">
-            <!--Liste des liens vers les collections-->
-            <li class="col l6 m6 s6" ng-repeat="Collection in Collections"><a class="white-text text-darken-3" href="{{Collection.uriadmin}}">{{Collection.nom}}</a></li>
-          </ul>
-        </div>
-        <div class="col l1 offset-l1 s12">
-          <a href="#!"><h4 class="secondaryColor">Histoire</h4></a>
-          <a href="#!"><h4 class="secondaryColor">Expositions</h4></a>
-          <a href="#!"><h4 class="secondaryColor">Evénements</h4></a>
-          <a href="#!"><h4 class="secondaryColor">Ateliers</h4></a>
-          <a href="#!"><h4 class="secondaryColor">Partenaires</h4></a>
-        </div>
-        <div class="col l2 m2 s12 offset-l2 offset-m2">
-         <a href="http://www.fges.fr/" target="blank"><img class="responsive-img" src="../images/logoH_FGES_Blanc.png" alt="FGES" title="FGES"/></a>
-       </div>
-      </div>
-      <div class="row">
-        <br/>
-        <div class="col l4 offset-l2">
-          <p>Site conçu et développé par:</p>
-          <div class="col l12 m12 s12">
-            <p>2015-2016: <span class="secondaryColor">DUPIN Louis</span>, <span class="secondaryColor">GUILLON Armand</span> et <span class="secondaryColor">LAMOOT Alexandre</span></p>
-            <p>2016-2017: <span class="secondaryColor">NOM1 Prénom1</span>, <span class="secondaryColor">NOM2 Prénom2</span> et <span class="secondaryColor">NOM3 Prénom3</span></p>
-          </div>
-        </div>
-        <div class="col l4 offset-l1">
-          <p>Sous la supervision de:</p>
-          <div class="col l12 m12 s12">
-            <p>2015-2016: <span class="secondaryColor">Guilbert Fréderic</span>, <span class="secondaryColor">HUBERT Benoît</span> et <span class="secondaryColor">BMZ</span></p>
-            <p>2016-2017: <span class="secondaryColor">Guilbert Fréderic</span>, <span class="secondaryColor">HUBERT Benoît</span> et <span class="secondaryColor">BMZ</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
-
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container copyright">
-      <div class="row">
-        <div class="col l2 offset-l1">
-          <span class="secondaryColor">© 2015</span> MuséH@me
-        </div>
-        <div class="col l2">
-          <a href="#!" class="white-text text-darken-3">Nous contacter</a>
-        </div>
-        <div class="col l5 offset-l1">
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="../vendors/JQuery-2.1.4/jquery-2.1.4.min.js"></script>
-
-<!-- Compiled and minified JavaScript -->
-<script src="../vendors/materialize-src/js/bin/materialize.min.js"></script>
-
-<!-- Compiled and minified JavaScript for Angular -->
-<script src="../vendors/AngularJS-1.5.3/angular.min.js"></script>
-
-<!-- Script Angular -->
-<script src="../scripts/mainForAngular.js"></script>
-
-<!-- Script menu -->
-<script src="../scripts/menu.js"></script>
-
-<!-- Script footer -->
-<script src="../scripts/hautFooter.js"></script>
-
-<!-- Script modals -->
-<script src="../scripts/modals.js"></script>
-</body>
+    <footer footer-content class="page-footer">  
+    </footer>
+  </body>
 </html>

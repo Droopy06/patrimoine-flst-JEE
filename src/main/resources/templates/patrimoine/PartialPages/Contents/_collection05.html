@@ -1,0 +1,15 @@
+      <div  ng-controller="Collection05PageCtrl as collection05PageCtrl">
+        <div class="row firstRow">
+          <div class="col l12 s12 titrePage">
+            <h1 class="center">{{collection05PageCtrl.Titre}}</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col l3 m3 s4" ng-repeat="Objet in collection05PageCtrl.Objets">
+            <a href="{{Objet.uri}}"><img class="responsive-img" src="{{Objet.img}}" alt="{{Objet.nom}}" title="{{Objet.nom}}"/></a>
+            <a href="{{Objet.uri}}"><h2 class="imgBlocks">{{Objet.nom}}</h2></a>
+          </div>
+        </div>
+      </div>
+      

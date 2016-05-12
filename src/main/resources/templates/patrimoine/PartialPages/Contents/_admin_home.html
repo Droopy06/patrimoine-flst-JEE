@@ -1,0 +1,138 @@
+      <div class="row firstRow">
+        <div class="col l12 m12 s12">
+          <div class="card">
+            <a href="#evenement01Modal" class="card-image waves-effect waves-block waves-light modal-trigger">
+              <img class="activator" src="{{evtsCtrl.EvenementsAccueil01.imageuri}}"/>
+              <span class="card-title activator col l4 m6 s12">
+                <h1>{{evtsCtrl.EvenementsAccueil01.titre}}</h1>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offset-m2 s12">
+          <div class="card">
+            <a href="#evenement02Modal" class="card-image waves-effect waves-block waves-light modal-trigger">
+              <img class="activator" src="{{evtsCtrl.EvenementsAccueil02.imageuri}}"/>
+              <span class="card-title activator col l4 m6 s12">
+                <h1>{{evtsCtrl.EvenementsAccueil02.titre}}</h1>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row widthContent">
+        <div class="col l6 m6 s12">
+          <div class="card">
+            <a href="#evenement03Modal" class="card-image waves-effect waves-block waves-light modal-trigger">
+              <img class="activator" src="{{evtsCtrl.EvenementsAccueil03.imageuri}}"/>
+              <span class="card-title activator col l4 m6 s12">
+                <h1>{{evtsCtrl.EvenementsAccueil03.titre}}</h1>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col l6 m6 s12">
+          <div class="card">
+            <a href="#evenement04Modal" class="card-image waves-effect waves-block waves-light modal-trigger">
+              <img class="activator" src="{{evtsCtrl.EvenementsAccueil04.imageuri}}"/>
+              <span class="card-title activator col l4 m6 s12">
+                <h1>{{evtsCtrl.EvenementsAccueil04.titre}}</h1>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--*************************
+            MODALS
+      **************************-->
+      <!-- Modal événement01 -->
+      <div id="evenement01Modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h1>Evénement Majeur</h1>
+          <br/>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <select class="icons" ng-controller="EvenementsListCtrl as evtsListCtrl">
+                <option value="" disabled selected>Choisissez l'événement majeur</option>
+                <option ng-repeat="Evenement in evtsListCtrl.Evenements" value="{{Evenement.titre}}" data-icon="{{Evenement.miniimageuri}}" class="circle">{{Evenement.titre}}</option>
+              </select>
+              <label>Liste des événements</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+        </div>
+      </div>
+      
+      <!-- Modal événement02 -->
+      <div id="evenement02Modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h1>Evénement Intermédiaire</h1>
+          <br/>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <select class="icons" ng-controller="EvenementsListCtrl as evtsListCtrl">
+                <option value="" disabled selected>Choisissez l'événement Intermédiaire</option>
+                  <option ng-repeat="Evenement in evtsListCtrl.Evenements" value="{{Evenement.titre}}" data-icon="{{Evenement.miniimageuri}}" class="circle">{{Evenement.titre}}</option>
+              </select>
+              <label>Liste des événements</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+        </div>
+      </div>
+
+      <!-- Modal événement03 -->
+      <div id="evenement03Modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h1>Evénement Mineur</h1>
+          <br/>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <select class="icons" ng-controller="EvenementsListCtrl as evtsListCtrl">
+                <option value="" disabled selected>Choisissez l'événement mineur</option>
+                  <option ng-repeat="Evenement in evtsListCtrl.Evenements" value="{{Evenement.titre}}" data-icon="{{Evenement.miniimageuri}}" class="circle">{{Evenement.titre}}</option>
+              </select>
+              <label>Liste des événements</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+        </div>
+      </div>
+
+      <!-- Modal événement04 -->
+      <div id="evenement04Modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h1>Evénement Mineur</h1>
+          <br/>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <select class="icons" ng-controller="EvenementsListCtrl as evtsListCtrl">
+                <option value="" disabled selected>Choisissez l'événement mineur</option>
+                  <option ng-repeat="Evenement in evtsListCtrl.Evenements" value="{{Evenement.titre}}" data-icon="{{Evenement.miniimageuri}}" class="circle">{{Evenement.titre}}</option>
+              </select>
+              <label>Liste des événements</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+        </div>
+      </div>
+      <!--*************************
+            FIN MODALS
+      **************************-->

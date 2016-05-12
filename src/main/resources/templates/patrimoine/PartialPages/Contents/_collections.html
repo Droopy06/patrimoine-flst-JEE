@@ -1,0 +1,15 @@
+      <div ng-controller="CollectionListCtrl as collectionsCtrl">
+        <div class="row firstRow">
+          <div class="col l12 s12 titrePage">
+            <h1 class="center">Collections</h1>
+          </div>
+        </div>
+
+        <!--Liste des collections-->
+        <div class="row">
+          <div class="col l2 m2 s2" ng-repeat="Collection in collectionsCtrl.Collections">
+            <a href="{{Collection.uri}}"><img class="responsive-img" src="{{Collection.img}}" alt="{{Collection.nom}}" title="{{Collection.nom}}"/></a>
+            <a href="{{Collection.uri}}"><h2 class="imgBlocks">{{Collection.nom}}</h2></a>
+          </div>
+        </div>
+      </div>
