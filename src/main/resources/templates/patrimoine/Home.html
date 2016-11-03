@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="sitePatrimoine">
-  <head>
-    <meta charset="utf-8"/>
-
-    <link rel="import" href="PartialPages/_head.html"/>
-    
-    <title>MuséH@me - Accueil</title>
-    <link rel="shortcut icon" href="../../static/images/icone.png"/>
-  </head>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr" ng-app="sitePatrimoine">
+  <head th:include="patrimoine/PartialPages/_head::content"></head>
 
   <body>
-  	<header header-content>
+  	<header class="header-content" th:include="patrimoine/PartialPages/_header::content">
     </header>
 
+    <script th:src="@{/scripts/mock/mockEvenements.js}"></script>
     <main ng-controller="EvenementsListCtrl as evtsCtrl">
-      <div home-content>
+      <div class="home-content" th:include="patrimoine/PartialPages/Contents/_home::content">
       </div>
-      <div haut-footer-content>
+      <div class="haut-footer-content">
       </div>
     </main>
 
-    <footer footer-content class="page-footer">  
+    <footer class="page-footer footer-content">
     </footer>
   </body>
 </html>

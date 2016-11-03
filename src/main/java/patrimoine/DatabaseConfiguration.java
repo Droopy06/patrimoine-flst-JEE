@@ -25,7 +25,7 @@ import static java.util.Collections.singletonList;
 public class DatabaseConfiguration extends AbstractMongoConfiguration {
     private final Logger log = LoggerFactory.getLogger(DatabaseConfiguration.class);
     //@Value("${spring.data.mongodb.host}")
-    private final static String host = "vps278022.ovh.net";
+    private final static String host = "localhost";
     //@Value("${spring.data.mongodb.port}")
     private final static Integer port = 27017;
     //@Value("${spring.data.mongodb.username}")
