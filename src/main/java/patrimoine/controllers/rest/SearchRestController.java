@@ -1,11 +1,10 @@
-package patrimoine.controllers;
+package patrimoine.controllers.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import patrimoine.models.Case;
 import patrimoine.models.Collection;
 import patrimoine.models.Evenement;
 import patrimoine.services.CollectionService;
@@ -26,12 +25,6 @@ public class SearchRestController {
     CollectionService collectionService;
     @Autowired
     EvenementService evenementService;
-
-    @Autowired
-    public SearchRestController(CollectionService collectionService) {
-        this.collectionService = collectionService;
-        List<Collection> collectionList = this.collectionService.findAllData();
-    }
 
     @RequestMapping(value = "/collections",method = RequestMethod.GET)
     public List<Collection> getAllCollections(){
@@ -54,29 +47,5 @@ public class SearchRestController {
     @RequestMapping(value = "/evenements",method = RequestMethod.GET)
     public List<Evenement> getAllEvenements(){
         return evenementService.findAllData();
-    }
-
-    @RequestMapping(value = "/getcase",method = RequestMethod.POST)
-    public Case getCaseByLineAndColumn(@Valid @ModelAttribute Case myCase, BindingResult results){
-        if(!results.hasErrors()){
-            try {
-                return collectionService.rechercheCase(myCase.getLigne(),myCase.getColumn());
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-            }
-        }
-        return new Case();
-    }
-
-    @RequestMapping(value = "/getline",method = RequestMethod.POST)
-    public List<Case> getCaseByLine(@Valid @ModelAttribute Case myCase, BindingResult results){
-        if(!results.hasErrors()){
-            try {
-                return collectionService.rechercherLigne(myCase.getLigne());
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-            }
-        }
-        return new ArrayList<Case>();
     }
 }
