@@ -10,6 +10,7 @@ import java.util.List;
  */
 public interface PedagogiqueMapper extends MongoRepository<Pedagogique, String > {
     List<Pedagogique> findAll();
+    Pedagogique findOne(String id);
     Pedagogique save(Pedagogique pedagogique);
     void delete(Pedagogique pedagogique);
 }

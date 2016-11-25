@@ -1,22 +1,21 @@
 package patrimoine.controllers.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.*;
 import patrimoine.models.Collection;
 import patrimoine.models.Pedagogique;
 import patrimoine.services.PedagogiqueService;
 
 import javax.validation.Valid;
+import javax.websocket.server.PathParam;
 import java.util.List;
 
 /**
  * Created by LAMOOT Alexandre on 04/11/2016.
  */
 @RestController
-@RequestMapping("/rest/patrimone")
+@RequestMapping("/rest/patrimoine")
 public class PedagogiqueRestController {
 
     @Autowired
@@ -31,6 +30,12 @@ public class PedagogiqueRestController {
     @RequestMapping(value = "/pedagogique",method = RequestMethod.GET)
     public List<Pedagogique> getAllPedagogique(){
         return pedagogiqueService.findAll();
+    }
+
+    @RequestMapping(value = "/pedagogique/{id}",method = RequestMethod.GET)
+    public Pedagogique getPedagogiqueById(@PathVariable("id") String id){
+        Pedagogique pedagogique = pedagogiqueService.findOne(id);
+        return pedagogiqueService.findOne(id);
     }
 
     @RequestMapping(value = "/pedagogique/save",method = RequestMethod.GET)

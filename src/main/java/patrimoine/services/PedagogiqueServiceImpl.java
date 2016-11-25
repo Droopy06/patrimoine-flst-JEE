@@ -22,6 +22,11 @@ public class PedagogiqueServiceImpl implements PedagogiqueService {
     }
 
     @Override
+    public Pedagogique findOne(String id) {
+        return pedagogiqueMapper.findOne(id);
+    }
+
+    @Override
     public Pedagogique save(Pedagogique pedagogique) {
         return pedagogiqueMapper.save(pedagogique);
     }
