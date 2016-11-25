@@ -1,7 +1,5 @@
 language: java
 jdk:
-  - openjdk7
-  - oraclejdk7
   - oraclejdk8
 # uncomment and edit the following line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
