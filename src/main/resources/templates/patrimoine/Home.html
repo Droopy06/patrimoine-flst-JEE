@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="fr" ng-app="sitePatrimoine">
-  <head th:include="patrimoine/PartialPages/_head::content"></head>
-
+<head th:include="patrimoine/PartialPages/_head::content"></head>
   <body>
   	<header class="header-content" th:include="patrimoine/PartialPages/_header::content">
     </header>
+    <div ng-controller="evtsCtrl">
+    <script src="../../../static/scripts/mock/mockEvenements.js" th:src="@{/scripts/mock/mockEvenements.js}"></script>
+    <main>
 
-    <script th:src="@{/scripts/mock/mockEvenements.js}"></script>
-    <main ng-controller="EvenementsListCtrl as evtsCtrl">
-      <div class="home-content" th:include="patrimoine/PartialPages/Contents/_home::content">
+     <div  th:include="patrimoine/PartialPages/Contents/_home::content">
       </div>
-      <div class="haut-footer-content">
+
+      <div th:include="patrimoine/PartialPages/_hautFooter::content">
       </div>
     </main>
+        </div>
 
-    <footer class="page-footer footer-content">
+    <footer th:include="patrimoine/PartialPages/_footer::content">
     </footer>
   </body>
 </html>
