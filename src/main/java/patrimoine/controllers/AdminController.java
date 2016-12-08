@@ -36,12 +36,12 @@ public class AdminController {
         storageService.store(file);
         excelService.readFileExcelCollectionImport(file.getName());
         HashMap<String, Object> model = new HashMap<String, Object>();
-        return new ModelAndView("patrimoine/Home",model);
+        return new ModelAndView("patrimoine/Import-export",model);
     }
 
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.GET)
     public ModelAndView importFile() throws IOException, BiffException {
         HashMap<String, Object> model = new HashMap<String, Object>();
-        return new ModelAndView("patrimoine/Home",model);
+        return new ModelAndView("patrimoine/Import-export",model);
     }
 }

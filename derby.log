@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Fri Nov 18 16:10:37 CET 2016:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872) : instance a816c00e-0158-77fd-4687-000005b7d9d8 
+dans le répertoire de base de données memory:C:\Users\prog\Documents\GitHub\ecommerce-flst\ecommerce_DB  avec le chargeur de classe sun.misc.Launcher$AppClassLoader@18b4aac2
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=C:\Users\prog\Documents\GitHub\ecommerce-flst
+derby.system.home=null
+Chargeur de classe de la base de données démarré - derby.database.classpath=''
