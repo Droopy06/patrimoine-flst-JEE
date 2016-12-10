@@ -1,0 +1,40 @@
+<div th:fragment="content">
+    <div class="row firstRow">
+        <div class="col l12 m12 s12">
+            <div class="valign-wrapper">
+                <h2 class="center-align"> MODULE IMPORT/EXPORT </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row firstRow">
+        <div class="col l12 m12 s12">
+            <div class="valign-wrapper">
+                <div ng-controller="collectionctrl">
+                    <script th:src="@{/scripts/mock/mockCollections.js}"></script>
+                    <form method="post" th:action="@{/admin/import}" enctype="multipart/form-data">
+                        <table>
+                            <tr> <td><label for="collection">Collections</label></td>
+                                <td>
+                                    <select id="test">
+                                        <option ng-repeat="collection in collections">{{collection.nom}}</option>
+                                    </select>
+                                </td> </tr> <br/> <br/>
+                            <tr>
+                                <td>
+                                    <label for="collection">Fichier</label>
+                                </td>
+                                <td>
+                                    <input type="file" id="file" name="file" accept="application/vnd.sealed-xls"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table> <tr>
+                            <td><input type="submit" name="envoyer" value="ENVOYER"/></td>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
