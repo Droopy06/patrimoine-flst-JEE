@@ -16,6 +16,7 @@ public class StorageProperties {
     public static String location = "C:/Users/prog/Documents/GitHub/";
 
     public StorageProperties() throws IOException {
-        location = new File(".").getCanonicalPath()+"\\src\\main\\resources\\static\\files\\";
+        location = new File(".").getCanonicalPath()+"\\file";
+        //location = "C:/Users/prog/Documents/GitHub/";
     }
 }

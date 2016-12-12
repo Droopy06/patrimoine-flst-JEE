@@ -10,11 +10,13 @@ import patrimoine.helper.StorageException;
 import patrimoine.helper.StorageFileNotFoundException;
 import patrimoine.helper.StorageProperties;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Date;
 import java.util.stream.Stream;
 
 /**
@@ -23,7 +25,11 @@ import java.util.stream.Stream;
 @Service
 public class StorageServiceImpl implements StorageService {
 
-    private final Path rootLocation = Paths.get(StorageProperties.location);
+    private final Path rootLocation;
+
+    public StorageServiceImpl() throws IOException {
+        rootLocation = Paths.get(new StorageProperties().location);
+    }
 
     /*@Autowired
     public StorageServiceImpl(StorageProperties properties) {
@@ -36,6 +42,9 @@ public class StorageServiceImpl implements StorageService {
             if (file.isEmpty()) {
                 throw new StorageException("Failed to store empty file " + file.getOriginalFilename());
             }
+            File fileExist = new File(this.rootLocation+"\\"+file.getOriginalFilename());
+            if(fileExist.exists())
+                fileExist.delete();
             Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
         } catch (IOException e) {
             throw new StorageException("Failed to store file " + file.getOriginalFilename(), e);

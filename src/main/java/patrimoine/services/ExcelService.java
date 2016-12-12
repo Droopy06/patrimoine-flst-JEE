@@ -9,5 +9,6 @@ import java.io.IOException;
  */
 public interface ExcelService{
 
-    void readFileExcelCollectionImport(String name) throws IOException, BiffException;
+    void loadFileExcelCollectionImport(String name) throws IOException, BiffException;
+    void readFileExcelCollectionImport() throws IOException, BiffException;
 }

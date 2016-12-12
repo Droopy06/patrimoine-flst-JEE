@@ -22,9 +22,14 @@ public class ExcelServiceImpl implements ExcelService {
     PedagogiqueService pedagogiqueService;
 
     @Override
-    public void readFileExcelCollectionImport(String name) throws IOException,BiffException  {
-        String path = new File(".").getCanonicalPath()+"\\src\\main\\resources\\static\\files\\";
-        workbook = Workbook.getWorkbook(new java.io.File(path+name));
+    public void loadFileExcelCollectionImport(String name) throws IOException, BiffException {
+        String path = new File(".").getCanonicalPath()+"\\file";
+        workbook = Workbook.getWorkbook(new java.io.File(path+"\\"+name));
+    }
+
+    @Override
+    public void readFileExcelCollectionImport() throws IOException,BiffException  {
+
         /* Un fichier excel est composé de plusieurs feuilles, on y accède de la manière suivante*/
         Sheet sheet = workbook.getSheet(1);
         //Cell cell = sheet.getCell(0,4);

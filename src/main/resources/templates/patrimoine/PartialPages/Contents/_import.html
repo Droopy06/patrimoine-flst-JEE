@@ -12,12 +12,12 @@
             <div class="valign-wrapper">
                 <div ng-controller="collectionctrl">
                     <script th:src="@{/scripts/mock/mockCollections.js}"></script>
-                    <form method="post" th:action="@{/admin/import}" enctype="multipart/form-data">
+                    <form method="post" th:action="@{/admin/import}" th:object="${collection}" enctype="multipart/form-data">
                         <table>
                             <tr> <td><label for="collection">Collections</label></td>
                                 <td>
-                                    <select id="test">
-                                        <option ng-repeat="collection in collections">{{collection.nom}}</option>
+                                    <select id="import" th:field="*{nom}">
+                                        <option ng-repeat="collection in collections" value="{{collection.nom}}">{{collection.nom}}</option>
                                     </select>
                                 </td> </tr> <br/> <br/>
                             <tr>
@@ -39,5 +39,7 @@
     </div>
 </div>
 <script type="text/javascript">
-    $('#test').show();
+    $(document).ready(function () {
+        $('#import').show();
+    });
 </script>

@@ -6,12 +6,14 @@ package patrimoine.controllers;
 import jxl.read.biff.BiffException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import patrimoine.models.Collection;
 import patrimoine.services.ExcelService;
 import patrimoine.services.utility.StorageService;
 
@@ -32,16 +34,19 @@ public class AdminController {
 
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.POST)
     public ModelAndView readFile(@RequestParam("file") MultipartFile file,
+                                 @ModelAttribute Collection collection,
                                  RedirectAttributes redirectAttributes) throws IOException, BiffException {
         storageService.store(file);
-        excelService.readFileExcelCollectionImport(file.getName());
+        excelService.loadFileExcelCollectionImport(file.getOriginalFilename());
         HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("collection",new Collection());
         return new ModelAndView("patrimoine/Import-export",model);
     }
 
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.GET)
     public ModelAndView importFile() throws IOException, BiffException {
         HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("collection",new Collection());
         return new ModelAndView("patrimoine/Import-export",model);
     }
 }
