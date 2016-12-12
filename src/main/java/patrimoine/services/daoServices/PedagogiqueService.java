@@ -1,4 +1,4 @@
-package patrimoine.services;
+package patrimoine.services.daoServices;
 
 import patrimoine.models.Pedagogique;
 

@@ -1,14 +1,10 @@
 package patrimoine.controllers.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
-import patrimoine.models.Collection;
 import patrimoine.models.Pedagogique;
-import patrimoine.services.PedagogiqueService;
+import patrimoine.services.daoServices.PedagogiqueService;
 
-import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 import java.util.List;
 
 /**
