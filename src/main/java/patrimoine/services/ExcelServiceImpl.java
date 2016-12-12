@@ -28,8 +28,101 @@ public class ExcelServiceImpl implements ExcelService {
     }
 
     @Override
-    public void readFileExcelCollectionImport() throws IOException,BiffException  {
+    public void readFileExcelCollectionImport(String object) throws IOException,BiffException  {
+        switch (object){
+            case "Herbiers":
+                readFileExcelHerbiers();
+                break;
+            case "Instruments":
+                readFileExcelInstruments();
+                break;
+            case "Jardin Botanique":
+                readFileExcelJardinBotanique();
+                break;
+            case "Materiel Pedagogique":
+                readFileExcelMaterielPedagogique();
+                break;
+            case "Mineralogie Cristallographie":
+                readFileExcelMineralogieCristallographie();
+                break;
+            case "Ouvrages Cartes Documents":
+                readFileExcelOuvragesCartesDocuments();
+                break;
+            case "Paleontologie Animale":
+                readFileExcelPaleontogieAnimale();
+                break;
+            case "Paleontologie Vegetale":
+                readFileExcelPaleontogieVegetale();
+                break;
+            case "Pedagogique":
+                readFileExcelPedagogique();
+                break;
+            case "Petrographie":
+                readFileExcelPetrographie();
+                break;
+            case "Physique":
+                readFileExcelPhysique();
+                break;
+            case "Typotheque":
+                readFileExcelTypotheque();
+                break;
+            case "Zoologie Invertebres Autres":
+                readFileExcelZoologieInvertebresAutres();
+                break;
+            case "Zoologie Invertebres Insectes":
+                readFileExcelZoologieInvertebresInsectes();
+                break;
+            case "Zoologie Invertebres Mollusques":
+                readFileExcelZoologieInvertebresMollusque();
+                break;
+            case "Zoologie Vertebres Autres":
+            default:
+                break;
+        }
+    }
 
+    @Override
+    public void readFileExcelHerbiers() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelInstruments() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelJardinBotanique() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelMaterielPedagogique() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelMineralogieCristallographie() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelOuvragesCartesDocuments() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelPaleontogieAnimale() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelPaleontogieVegetale() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelPedagogique() throws IOException, BiffException {
         /* Un fichier excel est composé de plusieurs feuilles, on y accède de la manière suivante*/
         Sheet sheet = workbook.getSheet(1);
         //Cell cell = sheet.getCell(0,4);
@@ -66,5 +159,65 @@ public class ExcelServiceImpl implements ExcelService {
             pedagogique.setAdministrator(sheet.getCell(28,i).getContents());
             pedagogiqueService.save(pedagogique);
         }
+    }
+
+    @Override
+    public void readFileExcelPetrographie() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelPhysique() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelTypotheque() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieInvertebresAutres() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieInvertebresInsectes() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieInvertebresMollusque() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieVertebresAutres() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieVertebresMammiferes() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieVertebresOiseaux() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieVertebresPoissons() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieVertebresPrimates() throws IOException, BiffException {
+
+    }
+
+    @Override
+    public void readFileExcelZoologieVertebresReptile() throws IOException, BiffException {
+
     }
 }
