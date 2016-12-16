@@ -38,7 +38,7 @@ public class AdminController {
                                  RedirectAttributes redirectAttributes) throws IOException, BiffException {
         storageService.store(file);
         excelService.loadFileExcelCollectionImport(file.getOriginalFilename());
-
+        excelService.readFileExcelCollectionImport(collection.getNom());
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("collection",new Collection());
         return new ModelAndView("patrimoine/Import-export",model);
