@@ -1,23 +1,26 @@
 <div th:fragment="content">
-    <script th:src="@{/scripts/mock/mockCollections.js}"></script>
-    <div ng-controller="collectionctrl">
-        <hr />
-        <div class="row firstRow">
-            <div class="col l6 offset-l3 m6 offset-m3 s12">
-                <div class="valign-wrapper">
-                    <h2 class="center-align">MODULE IMPORT</h2>
-                </div>
+    <hr />
+    <div class="row firstRow">
+        <div class="col l6 offset-l3 m6 offset-m3 s12">
+            <div class="valign-wrapper">
+                <h2 class="center-align">MODULE IMPORT</h2>
             </div>
         </div>
-        <hr />
+    </div>
+    <hr />
+    <div ng-controller="collectionctrl">
+        <script th:src="@{/scripts/mock/mockCollections.js}"></script>
         <form method="post" th:action="@{/admin/import}" th:object="${collection}" enctype="multipart/form-data">
             <div class="row">
                 <div class="col l6 offset-l3 m6 offset-m3 s12">
                     <div class="valign-wrapper">
                         <label for="collection-import">Collections</label>
-                        <select id="collection-import" th:field="*{nom}">
-                            <option ng-repeat="collection in collections" value="{{collection.nom}}">{{collection.nom}}</option>
-                        </select>
+                        <div input-field="input-field">
+                            <select id="collection-import" th:field="*{nom}" th:attr="watch='watch'"  material-select="material-select">
+                                <option value="0">Sélectionnez une option svp</option>
+                                <option ng-repeat="collection in collections" value="{{collection.nom}}">{{collection.nom}}</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,6 +55,7 @@
                     <div class="valign-wrapper">
                         <label for="collection-export">Collections</label>
                         <select id="collection-export" th:field="*{nom}">
+                            <option value="0">Sélectionnez une option svp</option>
                             <option ng-repeat="collection in collections" value="{{collection.nom}}">{{collection.nom}}</option>
                         </select>
                     </div>

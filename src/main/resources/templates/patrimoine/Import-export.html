@@ -14,9 +14,10 @@
 <footer th:include="patrimoine/PartialPages/_footer::content">
 </footer>
 </body>
+
 <script type="text/javascript">
     $(document).ready(function() {
-        $('select').material_select();
+        $('select:not([multiple])').material_select();
     });
 </script>
 </html>

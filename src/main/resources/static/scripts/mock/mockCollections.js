@@ -69,7 +69,7 @@ app.controller("collectionctrl",function($scope) {
     $scope.collections= collections;
 })
 */
-var app= angular.module("sitePatrimoine",[]);
+var app= angular.module("sitePatrimoine",['ui.materialize']);
 app.controller("collectionctrl",function($scope,$http){
     $http.get('/patrimoine/rest/patrimoine/collections').success(function (data) {
         $scope.collections= data;
