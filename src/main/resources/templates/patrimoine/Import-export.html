@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="fr" ng-app="sitePatrimoine">
 <head th:include="patrimoine/PartialPages/_head::content"></head>
 <body>
-<header class="header-content" th:include="patrimoine/PartialPages/_header::content">
+<header class="header-content" th:include="patrimoine/PartialPages/_admin_header::content">
 </header>
 <main>
     <div  th:include="patrimoine/PartialPages/Contents/_import::content">
@@ -14,10 +14,28 @@
 <footer th:include="patrimoine/PartialPages/_footer::content">
 </footer>
 </body>
-
+<script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('select:not([multiple])').material_select();
+    var suspend = false;
+    $('#collection-import').material_select();
+    $('#collection-import').on('change', function() {
+        if (!suspend) {
+            suspend = true;
+            var event = new CustomEvent('change', {
+                detail: 'change',
+                bubbles: true
+            });
+            $(this).get(0).dispatchEvent(event);
+        }
+    });
+    var suspend2 = false;
+
+    $('#collection-export').material_select();
+    $('#collection-export').on('change', function() {
+        if (!suspend2) {
+            suspend2 = true;
+            $('#collection-export').material_select();
+        }
     });
 </script>
 </html>

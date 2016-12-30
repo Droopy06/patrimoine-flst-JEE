@@ -16,7 +16,7 @@
                     <div class="valign-wrapper">
                         <label for="collection-import">Collections</label>
                         <div input-field="input-field">
-                            <select id="collection-import" th:field="*{nom}" th:attr="watch='watch'"  material-select="material-select">
+                            <select id="collection-import" th:field="*{nom}" v-model="collection-export">
                                 <option value="0">Sélectionnez une option svp</option>
                                 <option ng-repeat="collection in collections" value="{{collection.nom}}">{{collection.nom}}</option>
                             </select>
@@ -54,7 +54,7 @@
                 <div class="col l6 offset-l3 m6 offset-m3 s12">
                     <div class="valign-wrapper">
                         <label for="collection-export">Collections</label>
-                        <select id="collection-export" th:field="*{nom}">
+                        <select id="collection-export" th:field="*{nom}" v-model="collection-export">
                             <option value="0">Sélectionnez une option svp</option>
                             <option ng-repeat="collection in collections" value="{{collection.nom}}">{{collection.nom}}</option>
                         </select>

@@ -5,44 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611564df-0f8d-42d6-aff6-f67734f1db0e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/Application.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/ApplicationConfig.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/ApplicationConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file/Pedagogique.xls" afterPath="$PROJECT_DIR$/file/Pedagogique.xls" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-spring-boot.iml" afterPath="$PROJECT_DIR$/gs-spring-boot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/hautFooter.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/hautFooter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mainForAngular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/menu.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection01.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection01.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection02.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection02.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection03.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection03.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection04.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection04.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection05.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection05.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection06.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection06.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection07.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection07.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection08.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection08.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection09.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection09.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection10.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection10.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collections.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/collections.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/evenementsAcceuilListe.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/evenementsAcceuilListe.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/evenementsListe.json" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/evenementsListe.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection01.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection01.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection02.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection02.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection03.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection03.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection04.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection04.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection05.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection05.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection06.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection06.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection07.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection07.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection08.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection08.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection09.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection09.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection10.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollection10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/modals.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/modals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/pagesPartielles.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/pagesPartielles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/textarea.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/textarea.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_import.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_import.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
     </list>
     <ignored path="gs-spring-boot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_import.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_import.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_import.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="306">
+              <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
@@ -98,7 +67,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
               <caret line="71" column="58" lean-forward="false" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-              <folding />
+              <folding>
+                <marker date="1483125393355" expanded="true" signature="2236:2366" ph="{...}" />
+                <marker date="1483125393355" expanded="true" signature="2319:2361" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +78,58 @@
       <file leaf-file-name="Import-export.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state relative-caret-position="68">
+              <caret line="4" column="80" lean-forward="false" selection-start-line="4" selection-start-column="80" selection-end-line="4" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_admin_header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="28" column="127" lean-forward="false" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="127" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,7 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/PetrographieService.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/PetrographieServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/PhysiqueService.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/PhysiqueServiceImpl.java" />
@@ -231,12 +252,13 @@
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/ExcelService.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/ExcelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_export.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_import.html" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
       </list>
     </option>
   </component>
@@ -1336,15 +1358,15 @@
       <workItem from="1481890709974" duration="36000" />
       <workItem from="1481890797497" duration="39000" />
       <workItem from="1481890850492" duration="2802000" />
-      <workItem from="1483092782180" duration="29741000" />
+      <workItem from="1483092782180" duration="31305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182007000" />
+    <option name="totallyTimeSpent" value="183571000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1464,8 +1486,14 @@
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminController.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="67" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1474,27 +1502,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/ZoologieVertebresAutresServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
-          <folding>
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/ZoologieVertebresAutres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/ZoologieVertebresMammiferesService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1796,22 +1803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1824,14 +1815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="30" column="15" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="30" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="73" lean-forward="false" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -1908,14 +1891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="38" column="107" lean-forward="false" selection-start-line="38" selection-start-column="107" selection-end-line="38" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1929,7 +1904,7 @@
         <state relative-caret-position="-1294">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1939,7 +1914,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1956,7 +1931,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="71" column="58" lean-forward="false" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-          <folding />
+          <folding>
+            <marker date="1483125393355" expanded="true" signature="2236:2366" ph="{...}" />
+            <marker date="1483125393355" expanded="true" signature="2319:2361" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1968,21 +1946,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        <state relative-caret-position="114">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="306">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_hautFooter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="28" column="127" lean-forward="false" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/Import-export.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="80" lean-forward="false" selection-start-line="4" selection-start-column="80" selection-end-line="4" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
