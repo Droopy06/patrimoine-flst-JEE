@@ -4,6 +4,7 @@ package patrimoine.controllers;
  * Created by LAMOOT Alexandre on 20/11/15.
  */
 import jxl.read.biff.BiffException;
+import jxl.write.WriteException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -38,6 +39,7 @@ public class AdminController {
                                  RedirectAttributes redirectAttributes) throws IOException, BiffException {
         storageService.store(file);
         excelService.loadFileExcelCollectionImport(file.getOriginalFilename());
+        collection.setNom("Pedagogique");
         excelService.readFileExcelCollectionImport(collection.getNom());
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("collection",new Collection());
@@ -46,6 +48,16 @@ public class AdminController {
 
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.GET)
     public ModelAndView importFile() throws IOException, BiffException {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("collection",new Collection());
+        return new ModelAndView("patrimoine/Import-export",model);
+    }
+
+    @RequestMapping(value = { "/admin/export" }, method = RequestMethod.POST)
+    public ModelAndView writeFile(@ModelAttribute Collection collection,
+                                 RedirectAttributes redirectAttributes) throws IOException, BiffException, WriteException {
+        collection.setNom("Pedagogique");
+        excelService.writeFileExcelExport(collection.getNom());
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("collection",new Collection());
         return new ModelAndView("patrimoine/Import-export",model);
