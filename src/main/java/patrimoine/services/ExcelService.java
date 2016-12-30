@@ -17,8 +17,8 @@ public interface ExcelService{
     void readFileExcelMaterielPedagogique() throws IOException, BiffException;
     void readFileExcelMineralogieCristallographie() throws IOException, BiffException;
     void readFileExcelOuvragesCartesDocuments() throws IOException, BiffException;
-    void readFileExcelPaleontogieAnimale() throws IOException, BiffException;
-    void readFileExcelPaleontogieVegetale() throws IOException, BiffException;
+    void readFileExcelPaleontologieAnimale() throws IOException, BiffException;
+    void readFileExcelPaleontologieVegetale() throws IOException, BiffException;
     void readFileExcelPedagogique() throws IOException, BiffException;
     void readFileExcelPetrographie() throws IOException, BiffException;
     void readFileExcelPhysique() throws IOException, BiffException;
