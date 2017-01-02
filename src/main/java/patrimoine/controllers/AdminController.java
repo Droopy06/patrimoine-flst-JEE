@@ -39,7 +39,7 @@ public class AdminController {
     }
 
     @RequestMapping(value = { "/admin" }, method = RequestMethod.GET)
-    public ModelAndView adminHome(HttpSession httpSession){
+    public ModelAndView admin(HttpSession httpSession){
         HashMap<String, Object> model = new HashMap<String, Object>();
         if(isConnect(httpSession)){
             return new ModelAndView("redirect:/admin/home",model);
@@ -53,11 +53,20 @@ public class AdminController {
         Administrator adminMongo = administratorService.findOne(administrator.getEmail());
         if(administratorService.sha256(administrator.getPassword()).equals(adminMongo.getPassword()) && adminMongo.isActivated()){
             httpSession.setAttribute("administrator",adminMongo);
-            return new ModelAndView("redirect:/admin/import");
+            return new ModelAndView("redirect:/admin/home");
         }
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("administrator",new Administrator());
         return new ModelAndView("patrimoine/Admin-login",model);
+    }
+
+    @RequestMapping(value = { "/admin/home" }, method = RequestMethod.GET)
+    public ModelAndView adminHome(HttpSession httpSession){
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        if(isConnect(httpSession)){
+            return new ModelAndView("patrimoine/Admin_Home",model);
+        }
+        return new ModelAndView("redirect:/admin",model);
     }
 
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.POST)

@@ -1,3 +1,4 @@
+<div th:fragment="content">
   <div class="container siteMap">
     <div class="row">
       <i class="medium material-icons col l1 m1 s2 offset-l6 offset-m6 offset-s5 toggle-footer">keyboard_arrow_up</i>
@@ -20,8 +21,8 @@
           <a href="#!"><h4 class="secondaryColor">Partenaires</h4></a>
         </div>
         <div class="col l2 m2 s12 offset-l2 offset-m2">
-         <a href="http://www.fges.fr/" target="blank"><img class="responsive-img" src="../images/logoH_FGES_Blanc.png" alt="FGES" title="FGES"/></a>
-       </div>
+          <a href="http://www.fges.fr/" target="blank"><img class="responsive-img" th:src="@{/images/logoH_FGES_Blanc.png}" alt="FGES" title="FGES"/></a>
+        </div>
       </div>
       <div class="row">
         <br/>
@@ -44,4 +45,5 @@
   </div>
 
   <!-- Script footer -->
-  <script src="../scripts/hautFooter.js"></script>
+  <script th:src="@{/scripts/hautFooter.js}"></script>
+</div>
