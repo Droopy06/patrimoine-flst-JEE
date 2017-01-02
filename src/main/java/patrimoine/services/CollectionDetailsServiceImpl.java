@@ -23,7 +23,8 @@ public class CollectionDetailsServiceImpl implements CollectionDetailsService{
 
     @Override
     public CollectionDetails findOne(String id) {
-        return collectionDetailsMapper.findOne(id);
+        CollectionDetails collectionDetails = collectionDetailsMapper.findOne(id);
+        return (collectionDetails == null) ? new CollectionDetails() : collectionDetails;
     }
 
     @Override

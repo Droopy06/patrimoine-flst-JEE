@@ -12,4 +12,5 @@ public interface AdministratorService {
     Administrator findOne(String email);
     Administrator save(Administrator administrator);
     void delete(Administrator administrator);
+    String sha256(String base);
 }

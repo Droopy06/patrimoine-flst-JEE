@@ -30,6 +30,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/patrimoine/PartialPages/Contents/_home").setViewName("patrimoine/PartialPages/Contents/_home::content");
         registry.addViewController("/patrimoine/PartialPages/Contents/_import").setViewName("patrimoine/PartialPages/Contents/_import::content");
         registry.addViewController("/patrimoine/PartialPages/Contents/_export").setViewName("patrimoine/PartialPages/Contents/_export::content");
+        registry.addViewController("/patrimoine/PartialPages/Contents/_admin-login").setViewName("patrimoine/PartialPages/Contents/_admin-login::content");
     }
     @Override
     public void configureDefaultServletHandling(

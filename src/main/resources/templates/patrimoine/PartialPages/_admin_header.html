@@ -3,14 +3,14 @@
       <div class="row banniere">
         <div class="row">
           <div class="col l3 m3 s6">
-            <a href="Admin_Home.html"><img class="responsive-img" src="../images/banniere.png" alt="Accueil" title="Accueil"/></a>
+            <a href="Admin_Home.html"><img class="responsive-img" th:src="@{/images/banniere.png}" alt="Accueil" title="Accueil"/></a>
           </div>
           <div class="col l3 m3 s6 offset-l1 offset-m1">
-            <img class="responsive-img" src="../images/Admin_.png" alt="Accueil" title="Accueil"/>
+            <img class="responsive-img" th:src="@{/images/Admin_.png}" alt="Accueil" title="Accueil"/>
           </div>
           <div class="col l2 m2 offset-l3 offset-m3 offset-s2 hide-on-small-and-down">
             <div class="col l10 m10 s12 offset-l2 offset-m2">
-              <a href="http://lesfacultes.univ-catholille.fr/" target="blank"><img class="responsive-img" src="../images/logoH_FACULTES_blanc.png" alt="ICL" title="ICL"/></a>
+              <a href="http://lesfacultes.univ-catholille.fr/" target="blank"><img class="responsive-img" th:src="@{/images/logoH_FACULTES_blanc.png}" alt="ICL" title="ICL"/></a>
             </div>
           </div>
         </div>
@@ -55,5 +55,5 @@
     </div>
 
     <!-- Script menu -->
-    <script src="../scripts/menu.js"></script>
+    <script th:src="@{/scripts/menu.js}"></script>
 </div>
