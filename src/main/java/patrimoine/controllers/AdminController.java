@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import patrimoine.models.Administrator;
 import patrimoine.models.Collection;
 import patrimoine.services.ExcelService;
 import patrimoine.services.utility.StorageService;
@@ -33,13 +34,19 @@ public class AdminController {
         this.storageService = storageService;
     }
 
+    @RequestMapping(value = { "/admin" }, method = RequestMethod.GET)
+    public ModelAndView adminHome() throws IOException, BiffException {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("administrator",new Administrator());
+        return new ModelAndView("patrimoine/Admin",model);
+    }
+
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.POST)
     public ModelAndView readFile(@RequestParam("file") MultipartFile file,
                                  @ModelAttribute Collection collection,
                                  RedirectAttributes redirectAttributes) throws IOException, BiffException {
         storageService.store(file);
         excelService.loadFileExcelCollectionImport(file.getOriginalFilename());
-        collection.setNom("Pedagogique");
         excelService.readFileExcelCollectionImport(collection.getNom());
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("collection",new Collection());
@@ -56,7 +63,6 @@ public class AdminController {
     @RequestMapping(value = { "/admin/export" }, method = RequestMethod.POST)
     public ModelAndView writeFile(@ModelAttribute Collection collection,
                                  RedirectAttributes redirectAttributes) throws IOException, BiffException, WriteException {
-        collection.setNom("Pedagogique");
         excelService.writeFileExcelExport(collection.getNom());
         HashMap<String, Object> model = new HashMap<String, Object>();
         model.put("collection",new Collection());

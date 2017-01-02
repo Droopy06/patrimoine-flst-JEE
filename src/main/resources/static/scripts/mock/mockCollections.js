@@ -70,12 +70,16 @@ app.controller("collectionctrl",function($scope) {
 })
 */
 var app= angular.module("sitePatrimoine",['ui.materialize']);
+var data2 = [];
 app.controller("collectionctrl",function($scope,$http){
     $http.get('/patrimoine/rest/patrimoine/collections').success(function (data) {
         $scope.collections= data;
-
+        data2 = data;
+        console.log(data2);
     })
-
+    $scope.select = {
+        choices: data2
+    };
 
 })
 

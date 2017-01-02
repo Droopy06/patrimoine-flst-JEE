@@ -1,15 +1,15 @@
 package patrimoine.services.daoServices;
 
-import patrimoine.models.Herbiers;
+import patrimoine.models.Administrator;
 
 import java.util.List;
 
 /**
  * Created by LAMOOT Alexandre on 04/11/2016.
  */
-public interface HerbiersService {
-    List<Herbiers> findAll();
-    Herbiers findOne(String id);
-    Herbiers save(Herbiers herbiers);
-    void delete(Herbiers herbiers);
+public interface AdministratorService {
+    List<Administrator> findAll();
+    Administrator findOne(String email);
+    Administrator save(Administrator administrator);
+    void delete(Administrator administrator);
 }

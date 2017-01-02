@@ -21,11 +21,7 @@
     $('#collection-import').on('change', function() {
         if (!suspend) {
             suspend = true;
-            var event = new CustomEvent('change', {
-                detail: 'change',
-                bubbles: true
-            });
-            $(this).get(0).dispatchEvent(event);
+            $('#collection-import').material_select();
         }
     });
     var suspend2 = false;
