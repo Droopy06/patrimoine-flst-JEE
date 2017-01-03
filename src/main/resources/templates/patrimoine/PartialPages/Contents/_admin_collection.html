@@ -1,0 +1,81 @@
+<div th:fragment="content">
+  <div class="row firstRow">
+    <div class="col l12 s12 titrePage">
+      <h1 class="center" th:text="${collection}"></h1>
+    </div>
+  </div>
+  <div ng-controller="collectionobjectsctrl" th:attr="ng-init='init(\''+${nameCollection}+'\')'">
+    <script th:src="@{/scripts/mock/mockCollections.js}"></script>
+    <div class="row" ng-repeat="Objet in Objets">
+      <div class="col l2 m2 s4">
+        <a th:attr="href='/patrimoine/admin/collections/'+${nameCollection}+'/{{Objet.id}}'"><img class="responsive-img" th:attr="src='/patrimoine/images/Collections/'+${nameCollection}+'/{{Objet.picture}}'" alt="{{Objet.name}}" title="{{Objet.name}}"/></a>
+      </div>
+      <div class="col l10 m10 s8">
+        <a href="{{Objet.uriadmin}}"><h2>{{Objet.name}}</h2></a>
+        <br/>
+        <p>
+          {{Objet.annexe40}}
+        </p>
+        <br/>
+        <p>
+          {{Objet.description2}}
+        </p>
+        <br/>
+        <p>
+          {{Objet.description3}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-controller="c10onouveau as c10oN">
+    <div class="col l2 m2 s4">
+      <a href="#newModal" class="modal-trigger"><img class="responsive-img" src="/patrimoine/images/Plus.png" alt="new" title="new"/></a>
+    </div>
+    <div class="col l10 m10 s8">
+      <a href="#newModal" class="modal-trigger"><h2></h2></a>
+      <br/>
+      <p>
+        Cliquer sur cet objet pour en créer un nouveau.
+      </p>
+    </div>
+  </div>
+
+  <!--*************************
+            MODALS
+  **************************-->
+  <!-- Modal nouvel objet -->
+  <div id="newModal" class="modal">
+    <div class="modal-content">
+      <h1>Nouvel objet</h1>
+      <br/>
+      <div class="row">
+        <div class="input-field col l10 m10 s10">
+          <input value="" id="titre" type="text" class="validate" required="required">
+          <label class="active" for="titre" title="libéllé sous lequel l'objet doit apparaître dans la collection">titre de l'objet</label>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span title="Photo de résolution 1000px * 1000px">Photo miniature</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" required="required">
+          </div>
+        </div>
+        <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+    </div>
+  </div>
+  <!--*************************
+            FIN MODALS
+  **************************-->
+</div>
+      

@@ -34,6 +34,9 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/patrimoine/PartialPages/Contents/_admin_home").setViewName("patrimoine/PartialPages/Contents/_admin_home::content");
         registry.addViewController("/patrimoine/PartialPages/_admin_hautFooter").setViewName("patrimoine/PartialPages/_admin_hautFooter::content");
         registry.addViewController("/patrimoine/PartialPages/_admin_modals_home").setViewName("patrimoine/PartialPages/_admin_modals_home::content");
+        registry.addViewController("/patrimoine/PartialPages/Contents/_admin_collections").setViewName("patrimoine/PartialPages/Contents/_admin_collections::content");
+        registry.addViewController("/patrimoine/PartialPages/Contents/_admin_collection").setViewName("patrimoine/PartialPages/Contents/_admin_collection::content");
+        registry.addViewController("/patrimoine/PartialPages/Contents/_admin_object").setViewName("patrimoine/PartialPages/Contents/_admin_object::content");
     }
     @Override
     public void configureDefaultServletHandling(

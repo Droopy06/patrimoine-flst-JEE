@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="fr" ng-app="sitePatrimoine">
+  <head th:include="patrimoine/PartialPages/_head::content">
+  </head>
+
+  <body>
+    <header th:include="patrimoine/PartialPages/_admin_header::content">
+    </header>
+
+    <main> <!--ng-controller="Collection10PageCtrl as c10PageCtrl"-->
+      <div th:include="patrimoine/PartialPages/Contents/_admin_collection">
+        </div>
+      <div th:include="patrimoine/PartialPages/_hautFooter::content">
+      </div>
+    </main>
+
+    <footer th:include="patrimoine/PartialPages/_footer::content">
+    </footer>
+
+    <div th:include="patrimoine/PartialPages/_admin_modals_home::content">
+    </div>
+  </body>
+</html>

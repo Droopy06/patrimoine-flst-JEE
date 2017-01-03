@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="sitePatrimoine">
+<html xmlns:th="http://www.thymeleaf.org" lang="fr" ng-app="sitePatrimoine">
   <head th:include="patrimoine/PartialPages/_head::content">
   </head>
 
@@ -8,13 +8,16 @@
     </header>
 
     <main>
-      <div th:include="patrimoine/PartialPages/Contents/_admin_collections">
+      <div th:include="patrimoine/PartialPages/Contents/_admin_object::content">
       </div>
-      <div th:include="patrimoine/PartialPages/_admin_hautFooter::content">
+      <div th:include="patrimoine/PartialPages/_hautFooter::content">
       </div>
     </main>
 
     <footer th:include="patrimoine/PartialPages/_footer::content">
     </footer>
+
+    <div th:include="patrimoine/PartialPages/_admin_modals_home::content">
+    </div>
   </body>
 </html>

@@ -1,0 +1,132 @@
+<div th:fragment="content">
+  <div ng-controller="collectionobjectctrl as collectionobjectctrl" th:attr="ng-init='init(\''+${nameCollection}+'\',\''+${object}+'\')'">
+    <script th:src="@{/scripts/mock/mockCollections.js}"></script>
+    <div class="row firstRow">
+      <div class="col l8 s12 offset-l2 titrePage">
+        <div class="input-field">
+          <input value="{{collectionobjectctrl.Objet.name}}" id="titre" type="text" class="validate center" required="required"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l8 m8 s10 offset-s1">
+        <div class="card">
+          <a href="#modelisationModal" class="card-image waves-effect waves-block waves-light modal-trigger">
+            <img th:attr="src='/patrimoine/images/Collections/'+${nameCollection}+'/{{collectionobjectctrl.Objet.picture}}'" alt="{{collectionobjectctrl.Objet.picture}}"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="col l4 m4 s6 offset-s3">
+        <div class="col l12 m12 s12">
+          <h2>Nom commun</h2>
+        </div>
+        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+          <div class="input-field">
+            <input value="{{collectionobjectctrl.Objet.nomCom}}" id="nomCom" type="text" class="validate"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m4 s6 offset-s3">
+        <div class="col l12 m12 s12">
+          <h2>Nom scientifique</h2>
+        </div>
+        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+          <div class="input-field">
+            <input value="{{collectionobjectctrl.Objet.nomSci}}" id="nomSci" type="text" class="validate"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m4 s6 offset-s3">
+        <div class="col l12 m12 s12">
+          <h2>Période</h2>
+        </div>
+        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+          <div class="input-field">
+            <input value="{{collectionobjectctrl.Objet.periode}}" id="periode" type="text" class="validate"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m4 s6 offset-s3">
+        <div class="col l12 m12 s12">
+          <h2>Lieu et année de découverte</h2>
+        </div>
+        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+          <div class="input-field">
+            <input value="{{collectionobjectctrl.Objet.decouverte}}" id="periode" type="text" class="validate"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+        <div class="col l4 m4 s6">
+          <h2>Description</h2>
+        </div>
+        <div class="col l8 m8 s6">
+          <br/>
+          <p>
+          <div class="input-field">
+            <textarea id="description1" class="materialize-textarea">{{collectionobjectctrl.Objet.description1}}</textarea>
+          </div>
+          </p>
+          <br/>
+          <p>
+          <div class="input-field">
+            <textarea id="description2" class="materialize-textarea">{{collectionobjectctrl.Objet.description2}}</textarea>
+          </div>
+          </p>
+          <br/>
+          <p>
+          <div class="input-field">
+            <textarea id="description3" class="materialize-textarea">{{collectionobjectctrl.Objet.description3}}</textarea>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--*************************
+              MODALS
+    **************************-->
+    <!-- Modal Modelisation -->
+    <div id="modelisationModal" class="modal" ng-controller="collectionobjectctrl.Objet as collectionobjectctrl.Objet">
+      <div class="modal-content">
+        <h1>Imagerie</h1>
+        <br/>
+        <div class="row">
+          <div class="input-field col l10 m10 s10">
+            <input value="{{collectionobjectctrl.Objet.picture}}" id="titre" type="text" class="validate">
+            <label class="active" for="titre">Adresse de la modélisation</label>
+          </div>
+        </div>
+        <p class="modalCare" title="Aller sur la page de la modélisation sur sketchfab, copier l'url de la modélisation, coller là dans le champs ci-dessus et ajouter '/embed' à la fin."><i class="small material-icons attention">report_problem</i> N'oubliez pas le '/embed' à la fin de l'url de la page de votre modélisation!!!</p>
+        <br/><br/>
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Photo miniature</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" required="required">
+            </div>
+          </div>
+          <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+      </div>
+    </div>
+    <!--*************************
+              FIN MODALS
+    **************************-->
+  </div>
+</div>
