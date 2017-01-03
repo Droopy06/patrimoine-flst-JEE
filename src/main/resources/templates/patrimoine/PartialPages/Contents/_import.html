@@ -15,9 +15,9 @@
                 <div class="col l6 offset-l3 m6 offset-m3 s12">
                     <div class="valign-wrapper">
                         <label for="collection-import">Collections</label>
-                        <select id="collection-import" th:field="*{nom}">
+                        <select id="collection-import" th:field="*{nom}" material-select="material-select" watch="watch">
                             <option value="0" selected>Sélectionnez une option svp</option>
-                            <option value="1" ng-repeat="collection in collections">{{collection.nom}}</option>
+                            <option value="{{collection.nom}}" ng-repeat="collection in collections">{{collection.nom}}</option>
                         </select>
                     </div>
                 </div>
@@ -52,9 +52,9 @@
                 <div class="col l6 offset-l3 m6 offset-m3 s12">
                     <div class="valign-wrapper">
                         <label for="collection-export">Collections</label>
-                        <select id="collection-export" th:field="*{nom}">
-                            <option value="0" selected>Sélectionnez une option svp</option>
-                            <option value="1" ng-repeat="collection in collections">{{collection.nom}}</option>
+                        <select id="collection-export" th:field="*{nom}"  material-select="material-select" watch="watch">
+                            <option value="0">Sélectionnez une option svp</option>
+                            <option value="{{collection.nom}}" ng-repeat="collection in collections">{{collection.nom}}</option>
                         </select>
                     </div>
                 </div>
