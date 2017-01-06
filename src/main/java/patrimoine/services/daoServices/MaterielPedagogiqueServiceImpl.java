@@ -11,7 +11,7 @@ import java.util.List;
  * Created by LAMOOT Alexandre on 04/11/2016.
  */
 @Service
-public class MaterielPedagoiqueServiceImpl implements MaterielPedagoiqueService{
+public class MaterielPedagogiqueServiceImpl implements MaterielPedagogiqueService {
 
     @Autowired
     private MaterielPedagogiqueMapper materielPedagogiqueMapper;

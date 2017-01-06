@@ -1,6 +1,5 @@
 package patrimoine.services.daoServices;
 
-import patrimoine.models.MaterielPedagogique;
 import patrimoine.models.MineralogieCristallographie;
 
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.List;
 /**
  * Created by LAMOOT Alexandre on 04/11/2016.
  */
-public interface MineralogieCristallographiqueService {
+public interface MineralogieCristallographieService {
     List<MineralogieCristallographie> findAll();
     MineralogieCristallographie findOne(String id);
     MineralogieCristallographie save(MineralogieCristallographie mineralogieCristallographie);

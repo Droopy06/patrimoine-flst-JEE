@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by LAMOOT Alexandre on 04/11/2016.
  */
-public interface MaterielPedagoiqueService {
+public interface MaterielPedagogiqueService {
     List<MaterielPedagogique> findAll();
     MaterielPedagogique findOne(String id);
     MaterielPedagogique save(MaterielPedagogique materielPedagogique);

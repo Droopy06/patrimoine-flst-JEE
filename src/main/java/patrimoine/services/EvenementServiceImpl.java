@@ -12,11 +12,27 @@ import java.util.List;
  */
 @Service
 public class EvenementServiceImpl implements EvenementService{
+
     @Autowired
-    EvenementMapper evenementMapper;
+    private EvenementMapper evenementMapper;
 
     @Override
-    public List<Evenement> findAllData() {
+    public List<Evenement> findAll() {
         return evenementMapper.findAll();
+    }
+
+    @Override
+    public Evenement findOne(String id) {
+        return evenementMapper.findOne(id);
+    }
+
+    @Override
+    public Evenement save(Evenement evenement) {
+        return evenementMapper.save(evenement);
+    }
+
+    @Override
+    public void delete(Evenement evenement) {
+        evenementMapper.delete(evenement);
     }
 }

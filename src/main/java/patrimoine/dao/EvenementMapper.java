@@ -10,4 +10,7 @@ import java.util.List;
  */
 public interface EvenementMapper extends MongoRepository<Evenement, String > {
     List<Evenement> findAll();
+    Evenement findOne(String id);
+    Evenement save(Evenement evenement);
+    void delete(Evenement evenement);
 }

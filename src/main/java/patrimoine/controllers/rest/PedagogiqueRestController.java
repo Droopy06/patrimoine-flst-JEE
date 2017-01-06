@@ -36,7 +36,7 @@ public class PedagogiqueRestController {
 
     @RequestMapping(value = "/pedagogique/save",method = RequestMethod.GET)
     public Pedagogique savePedagogique(){
-        Pedagogique pedagogique = new Pedagogique();
+        /*Pedagogique pedagogique = new Pedagogique();
         pedagogique.setId("ICL-PEDA-002");
         pedagogique.setPicture("19-PHOTO MATERIEL PEDAGOGIQUE\\ICL-PEDA-001 (Abeilles).JPG");
         pedagogique.setName("Abeilles");
@@ -66,7 +66,8 @@ public class PedagogiqueRestController {
         pedagogique.setDimensions("");
         pedagogique.setNumberElements(0);
         pedagogique.setAdministrator("FGES");
-        return pedagogiqueService.save(pedagogique);
+        return pedagogiqueService.save(pedagogique);*/
+        return new Pedagogique();
     }
 
     @RequestMapping(value = "/pedagogique/delete",method = RequestMethod.GET)
@@ -86,7 +87,7 @@ public class PedagogiqueRestController {
         pedagogique.setNameCollection("Auzoux");
         pedagogique.setManifold("");
         pedagogique.setLocalization("");
-        pedagogique.setRetentionColor("non écaillé");
+        /*pedagogique.setRetentionColor("non écaillé");
         pedagogique.setRetentionMechanism("complet");
         pedagogique.setRetentionVarnish("non écaillé");
         pedagogique.setRetentionProperty("très bonne");
@@ -100,7 +101,7 @@ public class PedagogiqueRestController {
         pedagogique.setDescriptif("non");
         pedagogique.setDimensions("");
         pedagogique.setNumberElements(0);
-        pedagogique.setAdministrator("FGES");
+        pedagogique.setAdministrator("FGES");*/
         pedagogiqueService.delete(pedagogique);
     }
 }
