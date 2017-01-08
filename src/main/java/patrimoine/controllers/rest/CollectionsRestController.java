@@ -2,10 +2,7 @@ package patrimoine.controllers.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import patrimoine.models.Collection;
 import patrimoine.models.Pedagogique;
 import patrimoine.services.CollectionService;
@@ -28,8 +25,8 @@ public class CollectionsRestController {
         return collectionService.findAllData();
     }
 
-    @RequestMapping(value = "/collections/save",method = RequestMethod.GET)
-    public Collection saveCollection(@Valid @ModelAttribute Collection collection,
+    @RequestMapping(value = "/collections/save",method = RequestMethod.POST)
+    public Collection saveCollection(@RequestBody Collection collection,
                                        BindingResult bindingResult){
         if(!bindingResult.hasErrors()){
             try {

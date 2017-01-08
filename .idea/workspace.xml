@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611564df-0f8d-42d6-aff6-f67734f1db0e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" afterPath="$PROJECT_DIR$/file/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file/Pedagogique.xls" afterPath="$PROJECT_DIR$/file/Pedagogique.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/files/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" afterPath="$PROJECT_DIR$/src/main/resources/static/files/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/ExcelServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/ExcelServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_object.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_object.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" />
     </list>
     <ignored path="gs-spring-boot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,179 +35,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_admin_object.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_object.html">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="83" column="14" lean-forward="false" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#4;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#4;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#49;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#49;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#49;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#49;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#49;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="e#24679#24767#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/ExcelServiceImpl.java">
+      <file leaf-file-name="CollectionsDetailsRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsDetailsRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="732" column="77" lean-forward="false" selection-start-line="732" selection-start-column="77" selection-end-line="732" selection-end-column="77" />
-              <folding>
-                <element signature="method#loadFileExcelCollectionImport#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelCollectionImport#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelHeaderImport#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelHerbiers#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelInstruments#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelJardinBotanique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelMaterielPedagogique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelMineralogieCristallographie#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelOuvragesCartesDocuments#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelPaleontologieAnimale#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelPaleontologieVegetale#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelPedagogique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelPetrographie#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelPhysique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelTypotheque#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieInvertebresAutres#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieInvertebresInsectes#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieInvertebresMollusque#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieVertebresAutres#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieVertebresMammiferes#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieVertebresOiseaux#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieVertebresPoissons#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieVertebresPrimates#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#readFileExcelZoologieVertebresReptile#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelExport#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelHeaderExport#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelHerbiers#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelInstruments#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelJardinBotanique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelMaterielPedagogique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelMineralogieCristallographie#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelOuvragesCartesDocuments#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelPaleontologieAnimale#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelPaleontologieVegetale#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelPedagogique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelPetrographie#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelPhysique#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelTypotheque#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieInvertebresAutres#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieInvertebresInsectes#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieInvertebresMollusque#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieVertebresAutres#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieVertebresMammiferes#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieVertebresOiseaux#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieVertebresPoissons#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieVertebresPrimates#0;class#ExcelServiceImpl#0" expanded="false" />
-                <element signature="method#writeFileExcelZoologieVertebresReptile#0;class#ExcelServiceImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_admin_header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="43">
+              <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evenement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java">
+      <file leaf-file-name="CollectionsRestController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvenementRestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#826#827#0" expanded="false" />
-                <element signature="e#882#883#0" expanded="false" />
-                <element signature="e#998#999#0" expanded="false" />
-                <element signature="e#1047#1048#0" expanded="false" />
-                <element signature="e#1192#1193#0" expanded="false" />
-                <element signature="e#1243#1244#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvenementServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#479#480#0" expanded="false" />
-                <element signature="e#527#528#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvenementService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvenementMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -307,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/scripts/pagesPartielles.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_hautFooter.html" />
@@ -358,6 +208,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_object.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/ExcelServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" />
       </list>
     </option>
   </component>
@@ -1036,7 +888,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../patrimoine-flst-JEE-cc569d4d9e3ff7851ee03d44398201ccc10ce4a9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../M1_IPII/test_hotel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
@@ -1580,8 +1432,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Batch.start_database" />
-        <item index="1" class="java.lang.String" itemvalue="Batch.start_client" />
+        <item index="0" class="java.lang.String" itemvalue="Batch.start_client" />
+        <item index="1" class="java.lang.String" itemvalue="Batch.start_database" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1685,12 +1537,12 @@
       <workItem from="1483613413774" duration="1329000" />
       <workItem from="1483646274636" duration="582000" />
       <workItem from="1483690300606" duration="5647000" />
-      <workItem from="1483903312984" duration="1730000" />
+      <workItem from="1483903312984" duration="6175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245313000" />
+    <option name="totallyTimeSpent" value="249758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1707,13 +1559,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44444445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44444445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35213676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1819,8 +1671,14 @@
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="91" />
+      <option name="time" value="92" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1829,20 +1687,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mock/collection01.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_c10object.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/pagesPartielles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -1871,13 +1715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/CollectionDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -1889,13 +1726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsDetailsRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -2288,6 +2118,42 @@
             <element signature="method#writeFileExcelZoologieVertebresPrimates#0;class#ExcelServiceImpl#0" expanded="false" />
             <element signature="method#writeFileExcelZoologieVertebresReptile#0;class#ExcelServiceImpl#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/AdministratorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsDetailsRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
