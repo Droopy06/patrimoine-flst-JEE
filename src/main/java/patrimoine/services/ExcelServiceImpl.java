@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.File;
 import java.util.List;
 
+import jxl.WorkbookSettings;
 import jxl.read.biff.BiffException;
 import jxl.write.Label;
 import jxl.write.WritableSheet;
@@ -73,7 +74,9 @@ public class ExcelServiceImpl implements ExcelService {
     @Override
     public void loadFileExcelCollectionImport(String name) throws IOException, BiffException {
         String path = new File(".").getCanonicalPath()+"\\file";
-        workbook = Workbook.getWorkbook(new java.io.File(path+"\\"+name));
+        WorkbookSettings ws = new WorkbookSettings();
+        ws.setEncoding("Cp1252");
+        workbook = Workbook.getWorkbook(new java.io.File(path+"\\"+name),ws);
     }
 
     @Override
@@ -733,20 +736,20 @@ public class ExcelServiceImpl implements ExcelService {
         //Cell cell = sheet.getCell(0,4);
         for(int i = 3;i < sheet.getRows();i++){
             Pedagogique pedagogique = new Pedagogique();
-            pedagogique.setId(new String(sheet.getCell(0,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setPicture(new String(sheet.getCell(1,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setName(new String(sheet.getCell(2,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setGroupe(new String(sheet.getCell(3,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setKind(new String(sheet.getCell(4,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setEspece(new String(sheet.getCell(5,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setAuthor(new String(sheet.getCell(6,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setYear(new String(sheet.getCell(7,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setCountry(new String(sheet.getCell(8,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setCity(new String(sheet.getCell(9,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setPlace(new String(sheet.getCell(10,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setNameCollection(new String(sheet.getCell(11,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setManifold(new String(sheet.getCell(12,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
-            pedagogique.setLocalization(new String(sheet.getCell(13,i).getContents().getBytes("ISO-8859-1" ), "UTF-8"));
+            pedagogique.setId(sheet.getCell(0,i).getContents());
+            pedagogique.setPicture(sheet.getCell(1,i).getContents());
+            pedagogique.setName(sheet.getCell(2,i).getContents());
+            pedagogique.setGroupe(sheet.getCell(3,i).getContents());
+            pedagogique.setKind(sheet.getCell(4,i).getContents());
+            pedagogique.setEspece(sheet.getCell(5,i).getContents());
+            pedagogique.setAuthor(sheet.getCell(6,i).getContents());
+            pedagogique.setYear(sheet.getCell(7,i).getContents());
+            pedagogique.setCountry(sheet.getCell(8,i).getContents());
+            pedagogique.setCity(sheet.getCell(9,i).getContents());
+            pedagogique.setPlace(sheet.getCell(10,i).getContents());
+            pedagogique.setNameCollection(sheet.getCell(11,i).getContents());
+            pedagogique.setManifold(sheet.getCell(12,i).getContents());
+            pedagogique.setLocalization(sheet.getCell(13,i).getContents());
             pedagogique.setAnnexe1(sheet.getCell(14,i).getContents());
             pedagogique.setAnnexe2(sheet.getCell(15,i).getContents());
             pedagogique.setAnnexe3(sheet.getCell(16,i).getContents());
