@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import patrimoine.helper.Helper;
 import patrimoine.models.Administrator;
 import patrimoine.models.Collection;
 import patrimoine.services.ExcelService;
@@ -41,7 +42,7 @@ public class AdminController {
     @RequestMapping(value = { "/admin" }, method = RequestMethod.GET)
     public ModelAndView admin(HttpSession httpSession){
         HashMap<String, Object> model = new HashMap<String, Object>();
-        if(isConnect(httpSession)){
+        if(Helper.isConnect(httpSession)){
             return new ModelAndView("redirect:/admin/home",model);
         }
         model.put("administrator",new Administrator());
@@ -63,7 +64,7 @@ public class AdminController {
     @RequestMapping(value = { "/admin/home" }, method = RequestMethod.GET)
     public ModelAndView adminHome(HttpSession httpSession){
         HashMap<String, Object> model = new HashMap<String, Object>();
-        if(isConnect(httpSession)){
+        if(Helper.isConnect(httpSession)){
             return new ModelAndView("patrimoine/Admin_Home",model);
         }
         return new ModelAndView("redirect:/admin",model);
@@ -83,7 +84,7 @@ public class AdminController {
 
     @RequestMapping(value = { "/admin/import" }, method = RequestMethod.GET)
     public ModelAndView importFile(HttpSession httpSession) throws IOException, BiffException {
-        if(isConnect(httpSession)){
+        if(Helper.isConnect(httpSession)){
             HashMap<String, Object> model = new HashMap<String, Object>();
             model.put("collection",new Collection());
             return new ModelAndView("patrimoine/Import-export",model);
@@ -107,17 +108,5 @@ public class AdminController {
             httpSession.setAttribute("administrator",null);
         }
         return "redirect:/admin";
-    }
-
-    private boolean isConnect(HttpSession session){
-        boolean isConnect = false;
-        if(session.getAttribute("administrator") != null){
-            if(!session.getAttribute("administrator").equals(""))
-                isConnect = true;
-            else
-                isConnect = false;
-        }else
-            isConnect = false;
-        return isConnect;
     }
 }

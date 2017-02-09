@@ -28,9 +28,9 @@
     </div>
   </div>
 
-  <div class="row" ng-controller="c10onouveau as c10oN">
+  <div class="row">
     <div class="col l2 m2 s4">
-      <a href="#newModal" class="modal-trigger"><img class="responsive-img" src="/patrimoine/images/Plus.png" alt="new" title="new"/></a>
+      <a href="#newModal" class="modal-trigger"><img class="responsive-img" th:src="@{/images/Plus.png}" alt="new" title="new"/></a>
     </div>
     <div class="col l10 m10 s8">
       <a href="#newModal" class="modal-trigger"><h2></h2></a>
@@ -46,33 +46,36 @@
   **************************-->
   <!-- Modal nouvel objet -->
   <div id="newModal" class="modal">
-    <div class="modal-content">
-      <h1>Nouvel objet</h1>
-      <br/>
-      <div class="row">
-        <div class="input-field col l10 m10 s10">
-          <input value="" id="titre" type="text" class="validate" required="required">
-          <label class="active" for="titre" title="libéllé sous lequel l'objet doit apparaître dans la collection">titre de l'objet</label>
-        </div>
-      </div>
-      <br/>
-      <div class="row">
-        <div class="file-field input-field">
-          <div class="btn">
-            <span title="Photo de résolution 1000px * 1000px">Photo miniature</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text" required="required">
+    <form th:action="@{/admin/collection/new}" th:object="${object}" method="post" enctype="multipart/form-data">
+      <div class="modal-content">
+        <h1>Nouvel objet</h1>
+        <br/>
+        <div class="row">
+          <div class="input-field col l10 m10 s10">
+            <input id="titre" type="text" th:field="*{name}" class="validate" required="required"/>
+            <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
+            <label class="active" for="titre" title="libéllé sous lequel l'objet doit apparaître dans la collection">titre de l'objet</label>
           </div>
         </div>
-        <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
+        <br/>
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span title="Photo de résolution 1000px * 1000px">Photo miniature</span>
+              <input type="file" name="file" id="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" required="required">
+            </div>
+          </div>
+          <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
+        </div>
       </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
-      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
-    </div>
+      <div class="modal-footer">
+        <input type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" value="Enregistrer"/>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+      </div>
+    </form>
   </div>
   <!--*************************
             FIN MODALS
