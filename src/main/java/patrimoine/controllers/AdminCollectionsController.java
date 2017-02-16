@@ -9,28 +9,29 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
-import patrimoine.DatabaseConfiguration;
 import patrimoine.helper.DefaultClassCollection;
 import patrimoine.helper.Helper;
 import patrimoine.models.Collection;
-import patrimoine.models.Herbiers;
+import patrimoine.models.MaterielPedagogique;
 import patrimoine.models.Pedagogique;
 import patrimoine.services.CollectionService;
-import sun.print.PeekGraphics;
+import patrimoine.services.daoServices.MaterielPedagogiqueService;
+import patrimoine.services.daoServices.PedagogiqueService;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Objects;
 
 @Controller
 public class AdminCollectionsController {
 
     private final CollectionService collectionService;
+    private final MaterielPedagogiqueService materielPedagogiqueService;
 
     @Autowired
-    public AdminCollectionsController(CollectionService collectionService) {
+    public AdminCollectionsController(CollectionService collectionService, MaterielPedagogiqueService materielPedagogiqueService) {
         this.collectionService = collectionService;
+        this.materielPedagogiqueService = materielPedagogiqueService;
     }
 
     @RequestMapping(value = { "/admin/collections" }, method = RequestMethod.GET)
@@ -73,10 +74,11 @@ public class AdminCollectionsController {
     public ModelAndView createCollection(@ModelAttribute DefaultClassCollection object,
                                          @RequestParam("file") MultipartFile file,
                                          HttpSession httpSession){
-        Pedagogique pedagogique = new Pedagogique();
-        if (object instanceof Pedagogique)
-            pedagogique = ((Pedagogique) object);
+        MaterielPedagogique materielPedagogique = new MaterielPedagogique();
+        materielPedagogique.setName(object.getName());
+        materielPedagogique.setId("ICL-PEDA-71");
+        materielPedagogiqueService.save(materielPedagogique);
         HashMap<String, Object> model = new HashMap<>();
-        return new ModelAndView("patrimoine/Admin-login",model);
+        return new ModelAndView("redirect:/admin/collections/pedagogique",model);
     }
 }

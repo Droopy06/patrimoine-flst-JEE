@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "collection")
 public class Collection {
     private @Getter @Setter String nom;
+    private @Getter @Setter String famille;
     private @Getter @Setter String uri;
     private @Getter @Setter String uriadmin;
     private @Getter @Setter String img;

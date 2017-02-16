@@ -157,6 +157,7 @@ public class ExcelServiceImpl implements ExcelService {
         /* Un fichier excel est composé de plusieurs feuilles, on y accède de la manière suivante*/
         Sheet sheet = workbook.getSheet(1);
         int i = 2;
+        object = object.replace(" ","").toLowerCase();
         CollectionDetails collectionDetails = new CollectionDetails();
         collectionDetails.setNameOfCollection(object);
         collectionDetails.setId(sheet.getCell(0,i).getContents());
