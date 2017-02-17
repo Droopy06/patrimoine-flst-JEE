@@ -49,7 +49,7 @@ var evenement05 = {
     facebook: "#!",
     go: "#!",
 }
-var app= angular.module("sitePatrimoine",[]);
+var app= angular.module("sitePatrimoine",['ui.materialize']);
 app.controller("evtsCtrl",function($scope) {
     $scope.titre1 = evenement01.titre;
     $scope.miniDescr1 = evenement01.miniDescr;
@@ -100,6 +100,53 @@ app.controller("evtsCtrl",function($scope) {
     $scope.go5 = evenement05.go;
 
 })
+var dataMaj = [];var dataInterm = [];var dataMin1 = [];var dataMin2 =[];
+app.controller("evenementMajeurCtrl",function($scope,$http){
+    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+        $scope.Evenementsmajeur= data;
+        dataMaj = data;
+        console.log(dataMaj);
+    });
+    $scope.select = {
+        choices: dataMaj
+    };
+
+});
+app.controller("evenementIntermCtrl",function($scope,$http){
+    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+        $scope.EvenementsInterm= data;
+        dataInterm = data;
+        console.log(dataInterm);
+    });
+    $scope.select = {
+        choices: dataInterm
+    };
+
+});
+app.controller("evenementMineurctrl",function($scope,$http){
+    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+        $scope.EvenementsMineur= data;
+        dataMin1 = data;
+        console.log(dataMin1);
+    });
+    $scope.select = {
+        choices: dataMin1
+    };
+
+});
+
+app.controller("evenementmineurctrl2",function($scope,$http){
+    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+        $scope.EvenementsMineur2= data;
+        dataMin1 = data;
+        console.log(dataMin1);
+    });
+    $scope.select = {
+        choices: dataMin1
+    };
+
+});
+
 /*----------------------------------------------------
  fin Mock des événements
  ------------------------------------------------------*/
