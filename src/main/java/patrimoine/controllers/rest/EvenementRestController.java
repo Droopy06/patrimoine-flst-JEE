@@ -26,7 +26,7 @@ public class EvenementRestController {
         this.evenementService = evenementService;
     }
 
-    @RequestMapping(value = "/evenement",method = RequestMethod.GET)
+    @RequestMapping(value = "/evenements",method = RequestMethod.GET)
     public List<Evenement> getAllEvenement(){
         return evenementService.findAll();
     }

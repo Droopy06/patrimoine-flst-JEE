@@ -4,15 +4,7 @@
 /*----------------------------------------------------
  Mock des événements
  ------------------------------------------------------*/
-var evenement01 = {
-    titre: 'Evénement 01',
-    miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",
-    imageuri: "/images/Evenements/evenement01.png",
-    miniimageuri: "/images/Evenements/evenement01mini.png",
-    twitter: "#!",
-    facebook: "#!",
-    go: "#!",
-}
+db.evenement.insert({titre: 'Evénement 01',miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",imageuri: "/images/Evenements/evenement01.png", miniimageuri: "/images/Evenements/evenement01mini.png",twitter: "#!",facebook: "#!",go: "#!"})
 var evenement02 = {
     titre: 'Evénement 02',
     miniDescr: "Ceci est un exemple d'événement de niveau 2 (avec une image de taille moyenne)",

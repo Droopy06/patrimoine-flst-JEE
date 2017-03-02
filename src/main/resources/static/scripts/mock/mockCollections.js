@@ -24,16 +24,12 @@ app.controller("collectionobjectsctrl",function($scope,$http){
     }
 
 });
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
 app.controller("collectionobjectctrl",function($scope,$http){
     $scope.init = function (nameCollection,object) {
         $http.get('/patrimoine/rest/patrimoine/'+nameCollection+'/'+object).success(function (data) {
             $scope.Objet= data;
             dataObject = data;
         });
-        nameCollection = capitalizeFirstLetter(nameCollection);
         $http.get('/patrimoine/rest/patrimoine/collectionsdetails/'+nameCollection).success(function (data) {
             $scope.Collection= data;
             dataObject = data;
