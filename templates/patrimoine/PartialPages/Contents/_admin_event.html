@@ -1,0 +1,17 @@
+<div th:fragment="content">
+    <div class="row firstRow">
+        <div class="col l12 s12 titrePage">
+            <h1 class="center" th:text="${titreEvenement}"></h1>
+        </div>
+    </div>
+    <div ng-controller="Eventctrl">
+        <script th:src="@{/scripts/mock/mockEvenements.js}"></script>
+        <div carousel time-constant='500' no-wrap='true' >
+            <a class="carousel-item" href="#"><img class="responsive-img" src="{{Events.miniimageuri}}" alt="{{Events.titre}}" title="{{Events.titre}}"></a>
+            <a class="carousel-item" href="#"><img class="responsive-img" src="{{Events.miniimageuri}}" alt="{{Events.titre}}" title="{{Events.titre}}"></a>
+            <a class="carousel-item" href="#"><img class="responsive-img" src="{{Events.miniimageuri}}" alt="{{Events.titre}}" title="{{Events.titre}}"></a>
+            <a class="carousel-item" href="#"><img class="responsive-img" src="{{Events.miniimageuri}}" alt="{{Events.titre}}" title="{{Events.titre}}"></a>
+            <a class="carousel-item" href="#"><img class="responsive-img" src="{{Events.miniimageuri}}" alt="{{Events.titre}}" title="{{Events.titre}}"></a>
+        </div>
+    </div>
+</div>

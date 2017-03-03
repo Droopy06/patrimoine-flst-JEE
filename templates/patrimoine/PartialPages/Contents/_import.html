@@ -1,0 +1,71 @@
+<div th:fragment="content">
+    <hr />
+    <div class="row firstRow">
+        <div class="col l6 offset-l3 m6 offset-m3 s12">
+            <div class="valign-wrapper">
+                <h2 class="center-align">MODULE IMPORT</h2>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div ng-controller="collectionctrl">
+        <script th:src="@{/scripts/mock/mockCollections.js}"></script>
+        <form method="post" th:action="@{/admin/import}" th:object="${collection}" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col l6 offset-l3 m6 offset-m3 s12">
+                    <div class="valign-wrapper">
+                        <label for="collection-import">Collections</label>
+                        <select id="collection-import" th:field="*{nom}" material-select="material-select" watch="watch">
+                            <option value="0" selected>Sélectionnez une option svp</option>
+                            <option value="{{collection.nom}}" ng-repeat="collection in collections">{{collection.nom}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6 offset-l3 m6 offset-m3 s12">
+                    <div class="valign-wrapper">
+                        <label for="file">Fichier</label>
+                        <input type="file" id="file" name="file" accept="application/vnd.sealed-xls"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6 offset-l3 m3 offset-m6 s12">
+                    <div class="valign-wrapper">
+                        <input type="submit" name="envoyer" value="ENVOYER"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr />
+        <div class="row">
+            <div class="col l6 offset-l3 m6 offset-m3 s12">
+                <div class="valign-wrapper">
+                    <h2 class="center-align"> MODULE EXPORT </h2>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <form method="post" th:action="@{/admin/export}" th:object="${collection}" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col l6 offset-l3 m6 offset-m3 s12">
+                    <div class="valign-wrapper">
+                        <label for="collection-export">Collections</label>
+                        <select id="collection-export" th:field="*{nom}"  material-select="material-select" watch="watch">
+                            <option value="0">Sélectionnez une option svp</option>
+                            <option value="{{collection.nom}}" ng-repeat="collection in collections">{{collection.nom}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6 offset-l3 m3 offset-m6 s12">
+                    <div class="valign-wrapper">
+                        <input type="submit" name="extraire" value="Extraire"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

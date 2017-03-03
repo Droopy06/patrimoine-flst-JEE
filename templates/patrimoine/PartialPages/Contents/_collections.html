@@ -1,0 +1,18 @@
+     <div th:fragment="content">
+       <div ng-controller="CollectionListCtrl as collectionsCtrl">
+        <div class="row firstRow">
+          <div class="col l12 s12 titrePage">
+            <h1 class="center">Collections</h1>
+          </div>
+        </div>
+
+        <!--Liste des collections-->
+        <div class="row">
+            <div class="col l4 m4 s2" ng-repeat="collection in collections">
+                <a href="{{collection.uri}}"><img class="responsive-img" src="{{collection.img}}" alt="{{collection.nom}}" title="{{collection.nom}}"/></a>
+                <a href="{{collection.uri}}"><h2 id = "collname" class="imgBlocks">{{collection.nom}}</h2></a>
+                <a href="{{collection.uri}}"><h2 id = "collfamille" class="imgBlocks">[{{collection.famille}}]</h2></a>
+            </div>
+        </div>
+      </div>
+     </div>

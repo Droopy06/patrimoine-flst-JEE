@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"/>
+
+    <!-- My css -->
+    <link rel="stylesheet" href="../../static/stylesheets/ie.css" th:href="@{/stylesheets/ie.css}"/>
+    <link rel="stylesheet" href="../../static/stylesheets/print.css" th:href="@{/stylesheets/print.css}"/>
+    <link rel="stylesheet" href="../../static/stylesheets/screen.css" th:href="@{/stylesheets/screen.css}"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Musée H@me - Accueil</title>
+    <link rel="shortcut icon" href="../../static/images/icone.png" th:href="@{/images/icone.png}"/>
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="row banniere">
+            <div class="row">
+                <div class="col l5 s5">
+                    <a href="Home.html"><img class="responsive-img" src="../../static/images/banniere.png" th:src="@{/images/banniere.png}" alt="Accueil" title="Accueil"/></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col l1 s4 offset-l1 offset-s1">
+                    <div class="toggle-nav">
+                        <span class="m">M</span><span class="e"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span><span class="n">N</span><span class="u">U</span>
+                    </div>
+                </div>
+
+                <div class="col l3 offset-l8 hide-on-med-and-down">
+                    <form class="searchBar largeSearchBar">
+                        <div class="input-field">
+                            <input id="search" type="search" class="truncate" required="required"/>
+                            <label for="search"><i class="material-icons">search</i></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav-pane slide-out col l2 m3 s6">
+            <div class="col l11 m12 s12 hide-on-large-only">
+                <form class="searchBar">
+                    <div class="input-field">
+                        <input id="search" type="search" class="truncate" required="required"/>
+                        <label for="search"><i class="material-icons">search</i></label>
+                    </div>
+                </form>
+            </div>
+            <a href="#!"><h1>Collections</h1></a>
+            <a href="#!"><h1>Histoire</h1></a>
+            <a href="#!"><h1>Expositions</h1></a>
+            <a href="#!"><h1>Evénements</h1></a>
+            <a href="#!"><h1>Ateliers</h1></a>
+            <a href="#!"><h1>Partenaires</h1></a>
+            <br/>
+        </div>
+    </div>
+</header>
+
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container copyright">
+            <div class="row">
+                <div class="col l2 offset-l1">
+                    <span class="secondaryColor">© 2014</span> Musée H@me Copyright
+                </div>
+                <div class="col l2 offset-l2">
+                    <a href="#!" class="white-text text-darken-3">Nous contacter</a>
+                </div>
+                <div class="col l2 offset-l1">
+                    <a href="#!" class="white-text text-darken-3">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="../../static/vendors/JQuery-2.1.4/jquery-2.1.4.min.js" th:src="@{/vendors/JQuery-2.1.4/jquery-2.1.4.min.js}"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="../../static/vendors/materialize-src/js/bin/materialize.min.js" th:src="@{/vendors/materialize-src/js/bin/materialize.min.js}"></script>
+
+<!-- Script menu -->
+<script src="../../static/scripts/menu.js"  th:src="@{/scripts/menu.js}"></script>
+</body>
+</html>

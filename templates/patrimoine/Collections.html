@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="sitePatrimoine">
+<head>
+  <meta charset="utf-8"/>
+
+  <link rel="import" href="PartialPages/_head.html"/>
+
+  <title>MuséH@me - Collections</title>
+  <link rel="shortcut icon" href="../images/icone.png"/>
+</head>
+
+<body>
+    <header class="header-content" th:include="patrimoine/PartialPages/_header::content">
+    </header>
+    <main>
+      <div th:include="PartialPages/Contents/_collections::content">
+      </div>
+      <div th:include="patrimoine/PartialPages/_hautFooter::content">
+      </div>
+    </main>
+    <footer th:include="patrimoine/PartialPages/_footer::content">
+    </footer>
+  </body>
+</html>
