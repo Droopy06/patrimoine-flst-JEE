@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import patrimoine.models.Evenement;
-import patrimoine.models.Herbiers;
 import patrimoine.services.EvenementService;
-import patrimoine.services.daoServices.HerbiersService;
 
 import java.util.List;
 
@@ -26,8 +24,8 @@ public class EvenementRestController {
         this.evenementService = evenementService;
     }
 
-    @RequestMapping(value = "/evenement",method = RequestMethod.GET)
-    public List<Evenement> getAllEvenement(){
+    @RequestMapping(value = "/evenements",method = RequestMethod.GET)
+    public List<Evenement> getAllEvenements(){
         return evenementService.findAll();
     }
 

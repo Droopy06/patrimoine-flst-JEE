@@ -10,17 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611564df-0f8d-42d6-aff6-f67734f1db0e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdminEventsController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplicationConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EvenementRestController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/Materiel Pedagogique.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/Pedagogique.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module_gs-spring-boot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/musehome.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/musehome.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/musehome_jar/gs-spring-boot.jar" afterPath="$PROJECT_DIR$/classes/artifacts/musehome_jar/gs-spring-boot.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" afterPath="$PROJECT_DIR$/file/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/files/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" afterPath="$PROJECT_DIR$/src/main/resources/static/files/19- MATERIEL PEDAGOGIQUE (ICL-PEDA-000).xls" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01mini.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02.png" />
@@ -31,19 +20,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement04mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement04mini.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05mini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patrimoine/ApplicationConfig.class" afterPath="$PROJECT_DIR$/target/classes/patrimoine/ApplicationConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminEventsController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminEventsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_Home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_Home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_hautFooter.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_hautFooter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_head.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html" />
     </list>
     <ignored path="gs-spring-boot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,31 +60,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Evenement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java">
+      <file leaf-file-name="EvenementRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-409">
-              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="396">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionsRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminEventsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminEventsController.java">
+      <file leaf-file-name="_admin_collections.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="286">
+              <caret line="13" column="235" lean-forward="false" selection-start-line="13" selection-start-column="235" selection-end-line="13" selection-end-column="235" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -118,7 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>@NonNull</find>
       <find>4</find>
       <find>pedagogique</find>
       <find>getBytes(&quot;ISO-8859-1&quot; )</find>
@@ -148,6 +187,7 @@
       <find>c10</find>
       <find>collection</find>
       <find>private</find>
+      <find>object</find>
     </findStrings>
     <replaceStrings>
       <replace>instruments</replace>
@@ -193,10 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/OuvragesCartesDocumentsRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/PaleontologieAnimaleRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/PaleontologieVegetaleRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/PetrographieRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/MaterielPedagogiqueRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/PhysiqueRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/TypothequeRestController.java" />
@@ -212,7 +248,6 @@
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/ZoologieVertebresReptileRestController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_object.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_modals_home.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/helper/Helper.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminController.java" />
@@ -225,25 +260,30 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_collections.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collection.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/-admin-event.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_Events.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_event.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_event.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html" />
         <option value="$PROJECT_DIR$/start_database.bat" />
         <option value="$PROJECT_DIR$/start_client.bat" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminEventsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapperImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -471,11 +511,259 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PartialPages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PartialPages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Contents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daoServices" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,6 +818,40 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -554,25 +876,25 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages\Contents" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\vendors" />
-      <recent name="$PROJECT_DIR$/src/main/java/patrimoine/classes" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="patrimoine.helper" />
-      <recent name="patrimoine.controllers.rest" />
-      <recent name="patrimoine.controllers" />
-      <recent name="patrimoine.services.daoServices" />
-      <recent name="patrimoine.dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages" />
       <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages\Contents" />
       <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\scripts\mock" />
       <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\scripts" />
       <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="patrimoine.dao" />
+      <recent name="patrimoine.helper" />
+      <recent name="patrimoine.controllers.rest" />
+      <recent name="patrimoine.controllers" />
+      <recent name="patrimoine.services.daoServices" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine" />
+      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages\Contents" />
+      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\vendors" />
+      <recent name="$PROJECT_DIR$/src/main/java/patrimoine/classes" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
@@ -1040,8 +1362,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Batch.start_database" />
-        <item index="1" class="java.lang.String" itemvalue="Batch.start_client" />
+        <item index="0" class="java.lang.String" itemvalue="Batch.start_client" />
+        <item index="1" class="java.lang.String" itemvalue="Batch.start_database" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1173,16 +1495,16 @@
       <workItem from="1488533080923" duration="20815000" />
       <workItem from="1488569777308" duration="4611000" />
       <workItem from="1488622639571" duration="380000" />
-      <workItem from="1488623121360" duration="387000" />
+      <workItem from="1488623121360" duration="6693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362831000" />
+    <option name="totallyTimeSpent" value="369137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1202,10 +1524,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3764706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3764706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34586465" sideWeight="0.48923078" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34586465" sideWeight="0.48923078" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38124055" sideWeight="0.51076925" order="5" side_tool="true" content_ui="tabs" />
@@ -1273,7 +1595,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java</url>
-          <line>33</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1291,7 +1613,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java</url>
-          <line>30</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
@@ -1305,41 +1627,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/helper/DefaultClassCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/helper/template/model/Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/helper/template/dao/TemplateMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/helper/template/service/TemplateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/daoServices/AdministratorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1358,14 +1645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1432,13 +1711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/EvenementMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1453,13 +1725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/Collections.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1468,43 +1733,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/-admin-event.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1558,13 +1790,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/HashMap.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminCollectionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02mini.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1585,14 +1810,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1605,14 +1822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="150" column="28" lean-forward="false" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1649,10 +1858,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminCollectionsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="52" column="55" lean-forward="true" selection-start-line="52" selection-start-column="55" selection-end-line="53" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/AdminEventsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="242">
+          <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="158" column="58" lean-forward="false" selection-start-line="158" selection-start-column="58" selection-end-line="158" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="900" column="0" lean-forward="false" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/EvenementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="235" lean-forward="false" selection-start-line="13" selection-start-column="235" selection-end-line="13" selection-end-column="235" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/DatabaseConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/models/Evenement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/CollectionsRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/dao/CollectionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patrimoine/services/CollectionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding />
         </state>
       </provider>

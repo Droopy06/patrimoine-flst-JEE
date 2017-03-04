@@ -25,6 +25,11 @@ public class CollectionsRestController {
         return collectionService.findAllData();
     }
 
+    @RequestMapping(value = "/collections/order",method = RequestMethod.GET)
+    public List<Collection> getAllCollectionsOrder(){
+        return collectionService.findAllDataOrderByNameAsc();
+    }
+
     @RequestMapping(value = "/collections/save",method = RequestMethod.POST)
     public Collection saveCollection(@RequestBody Collection collection,
                                        BindingResult bindingResult){

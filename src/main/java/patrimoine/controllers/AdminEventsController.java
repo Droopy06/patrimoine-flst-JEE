@@ -32,6 +32,7 @@ public class AdminEventsController {
         if (Helper.isConnect(httpSession)) {
             HashMap<String, Object> model = new HashMap<String, Object>();
             model.put("evenement", new Evenement());
+            model.put("object",new Evenement());
             return new ModelAndView("patrimoine/Admin_Events", model);
         }
         return new ModelAndView("redirect:/admin");

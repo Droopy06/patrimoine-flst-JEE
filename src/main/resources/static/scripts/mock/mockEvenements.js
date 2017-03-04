@@ -100,9 +100,9 @@ app.controller("evtsCtrl",function($scope) {
     $scope.go5 = evenement05.go;
 
 })
-var dataMaj = [];var dataInterm = [];var dataMin1 = [];var dataMin2 =[]; dataObjets
+var dataMaj = [];var dataInterm = [];var dataMin1 = [];var dataMin2 =[];var dataObjets = [];
 app.controller("evenementMajeurCtrl",function($scope,$http){
-    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+    $http.get('/patrimoine/rest/patrimoine/evenements').success(function (data) {
         $scope.Evenementsmajeur= data;
         dataMaj = data;
         console.log(dataMaj);
@@ -113,7 +113,7 @@ app.controller("evenementMajeurCtrl",function($scope,$http){
 
 });
 app.controller("evenementIntermCtrl",function($scope,$http){
-    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+    $http.get('/patrimoine/rest/patrimoine/evenements').success(function (data) {
         $scope.EvenementsInterm= data;
         dataInterm = data;
         console.log(dataInterm);
@@ -124,7 +124,7 @@ app.controller("evenementIntermCtrl",function($scope,$http){
 
 });
 app.controller("evenementMineurctrl",function($scope,$http){
-    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+    $http.get('/patrimoine/rest/patrimoine/evenements').success(function (data) {
         $scope.EvenementsMineur= data;
         dataMin1 = data;
         console.log(dataMin1);
@@ -136,7 +136,7 @@ app.controller("evenementMineurctrl",function($scope,$http){
 });
 
 app.controller("evenementmineurctrl2",function($scope,$http){
-    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+    $http.get('/patrimoine/rest/patrimoine/evenements').success(function (data) {
         $scope.EvenementsMineur2= data;
         dataMin1 = data;
         console.log(dataMin1);
@@ -147,7 +147,7 @@ app.controller("evenementmineurctrl2",function($scope,$http){
 
 });
 app.controller("objetEventsctrl",function($scope,$http){
-    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+    $http.get('/patrimoine/rest/patrimoine/evenements').success(function (data) {
         $scope.Objets= data;
         dataObjets = data;
         console.log(dataObjets);
@@ -156,7 +156,7 @@ app.controller("objetEventsctrl",function($scope,$http){
 });
 app.controller("Eventctrl",function($scope,$http){
     $scope.init = function (titreEvenement) {
-        $http.get('/patrimoine/rest/patrimoine/'+titreEvenement).success(function (data) {
+        $http.get('/patrimoine/rest/patrimoine/evenements/'+titreEvenement).success(function (data) {
             $scope.Events= data;
             dataObjecs = data;
             console.log(dataObjets);

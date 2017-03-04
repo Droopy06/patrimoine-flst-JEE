@@ -33,7 +33,7 @@ app.controller("collectionobjectctrl",function($scope,$http){
             $scope.Objet= data;
             dataObject = data;
         });
-        nameCollection = capitalizeFirstLetter(nameCollection);
+        /*nameCollection = capitalizeFirstLetter(nameCollection);*/
         $http.get('/patrimoine/rest/patrimoine/collectionsdetails/'+nameCollection).success(function (data) {
             $scope.Collection= data;
             dataObject = data;

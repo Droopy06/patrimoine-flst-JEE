@@ -9,6 +9,7 @@ import java.util.List;
  */
 public interface CollectionService {
     List<Collection> findAllData();
+    List<Collection> findAllDataOrderByNameAsc();
     Collection save(Collection collection);
     void delete(Collection collection);
 }

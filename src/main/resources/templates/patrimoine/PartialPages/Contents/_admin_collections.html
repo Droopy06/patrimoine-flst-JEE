@@ -11,8 +11,8 @@
         <div class="row">
             <div class="col l4 m4 s2" ng-repeat="collection in collections">
                 <a href="{{collection.uriadmin}}"><img class="responsive-img" src="{{collection.img}}" alt="{{collection.nom}}" title="{{collection.nom}}"/></a>
-                <a href="{{collection.uriadmin}}"><h2 id = "collname" class="imgBlocks">{{collection.nom | uppercase}}</h2></a>
-                <div ng-show = " '{{collection.famille}}' != ''"><a href="{{collection.uriadmin}}"><h2 id = "collfamille" class="imgBlocks">[{{collection.famille}}]</h2></a></div>
+                <a href="{{collection.uriadmin}}"><h2 id = "collname" class="imgBlocks">{{collection.famille != '' ? collection.nom.substring(0,collection.nom.indexOf(collection.nom.replace(collection.famille+' ',''))) : collection.nom | uppercase}}</h2></a>
+                <div ng-show = " '{{collection.famille}}' != ''"><a href="{{collection.uriadmin}}"><h2 id = "collfamille" class="imgBlocks">[{{collection.nom.replace(collection.famille+' ','')}}]</h2></a></div>
                 <!--<div ng-show = " '{{collection.famille}}' != ''"><a href="{{collection.uriadmin}}"><h2 id = "collfamille" class="imgBlocks">[{{collection.nom | truncate : '{{collection.famille}}'}}]</h2></a></div> -->
             </div>
         </div>

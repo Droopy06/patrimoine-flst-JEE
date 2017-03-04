@@ -1,9 +1,14 @@
 package patrimoine.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import patrimoine.models.Collection;
 import patrimoine.dao.CollectionMapper;
+import sun.net.www.MimeTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +26,13 @@ public class CollectionServiceImpl implements CollectionService {
     public List<Collection> findAllData() {
         return collectionMapper.findAll();
     }
+
+    @Override
+    public List<Collection> findAllDataOrderByNameAsc() {
+
+        return collectionMapper.findAll(new Sort(Sort.Direction.DESC, "name"));
+    }
+
 
     @Override
     public Collection save(Collection collection) {
