@@ -10,22 +10,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611564df-0f8d-42d6-aff6-f67734f1db0e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement01mini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement02mini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement03.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement03mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement03mini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement04.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement04mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement04mini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05mini.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Evenements/evenement05mini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-spring-boot.iml" afterPath="$PROJECT_DIR$/gs-spring-boot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java" afterPath="$PROJECT_DIR$/src/main/java/patrimoine/controllers/rest/EvenementRestController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/hautFooter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mainForAngular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection01.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection02.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection03.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection04.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection05.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection06.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection07.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection08.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection09.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collection10.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/collections.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/evenementsAcceuilListe.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/evenementsListe.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection03.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection04.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection05.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection06.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection07.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection08.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection09.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollection10.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockCollections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mock/mockEvenements.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/modals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/pagesPartielles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/textarea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/screen.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/layout/mainLayout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/layout/siteLayout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin-login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin_Collection.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin_Collections.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin_Home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin_Object.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Collection10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Collections.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/Import-export.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin-login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_c10object.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_collection.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_object.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_c10object.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_collection10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_import.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_admin_hautFooter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_admin_header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_admin_modals_home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_hautFooter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/_header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/patrimoine/c10o0001.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin_Events.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_Events.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patrimoine/Admin_event.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_event.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_collections.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collections.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_event.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_event.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_admin_events.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_events.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patrimoine/PartialPages/Contents/_collections.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_collections.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockCollections.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/mock/mockEvenements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css" afterPath="$PROJECT_DIR$/src/main/resources/static/stylesheets/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_Home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Admin_Home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Collection10.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Collection10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Collections.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Collections.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/Home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collection.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_collection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/Contents/_admin_home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_hautFooter.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_hautFooter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_admin_header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_hautFooter.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_hautFooter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_head.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/PartialPages/_head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/c10o0001.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/patrimoine/c10o0001.html" />
     </list>
     <ignored path="gs-spring-boot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +121,11 @@
     <favorites_list name="gs-spring-boot" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
+            <state relative-caret-position="198">
               <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
                 <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
@@ -81,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/start_database.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="86" />
+              <caret line="0" column="86" lean-forward="false" selection-start-line="0" selection-start-column="86" selection-end-line="0" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -273,9 +340,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1924" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -426,7 +494,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -449,7 +518,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gs-spring-boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patrimoine-flst-JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,32 +574,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gs-spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrimoine-flst-JEE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifacts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musehome_jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -519,11 +599,12 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="musehome" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages\Contents" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\vendors" />
-      <recent name="$PROJECT_DIR$/src/main/java/patrimoine/classes" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dev\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages\Contents" />
+      <recent name="C:\Users\dev\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages" />
+      <recent name="C:\Users\dev\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine" />
+      <recent name="C:\Users\dev\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\scripts\mock" />
+      <recent name="C:\Users\dev\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\scripts" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="patrimoine.helper" />
@@ -532,12 +613,11 @@
       <recent name="patrimoine.services.daoServices" />
       <recent name="patrimoine.dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine" />
       <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\templates\patrimoine\PartialPages\Contents" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\scripts\mock" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\scripts" />
-      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static" />
+      <recent name="C:\Users\prog\Documents\GitHub\patrimoine-flst-JEE\src\main\resources\static\vendors" />
+      <recent name="$PROJECT_DIR$/src/main/java/patrimoine/classes" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
@@ -1131,46 +1211,47 @@
       <workItem from="1487791459363" duration="595000" />
       <workItem from="1487955602016" duration="655000" />
       <workItem from="1488215838794" duration="538000" />
+      <workItem from="1488608943060" duration="233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295294000" />
+    <option name="totallyTimeSpent" value="295527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706767" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50238097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33566058" sideWeight="0.48923078" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44444445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50238097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.48923078" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38124055" sideWeight="0.51076925" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44444445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32588235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1597,7 +1678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,7 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1628,7 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1642,7 +1720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
+        <state relative-caret-position="198">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
@@ -1661,7 +1739,7 @@
     <entry file="file://$PROJECT_DIR$/start_database.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="86" />
+          <caret line="0" column="86" lean-forward="false" selection-start-line="0" selection-start-column="86" selection-end-line="0" selection-end-column="86" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,15 @@
 /*----------------------------------------------------
  Mock des événements
  ------------------------------------------------------*/
-db.evenement.insert({titre: 'Evénement 01',miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",imageuri: "/images/Evenements/evenement01.png", miniimageuri: "/images/Evenements/evenement01mini.png",twitter: "#!",facebook: "#!",go: "#!"})
+var evenement01 = {
+    titre: 'Evénement 01',
+    miniDescr: "Ceci est un exemple d'événement de niveau 1 (avec une graaaaande image)",
+    imageuri: "/images/Evenements/evenement01.png",
+    miniimageuri: "/images/Evenements/evenement01mini.png",
+    twitter: "#!",
+    facebook: "#!",
+    go: "#!",
+}
 var evenement02 = {
     titre: 'Evénement 02',
     miniDescr: "Ceci est un exemple d'événement de niveau 2 (avec une image de taille moyenne)",
@@ -92,7 +100,7 @@ app.controller("evtsCtrl",function($scope) {
     $scope.go5 = evenement05.go;
 
 })
-var dataMaj = [];var dataInterm = [];var dataMin1 = [];var dataMin2 =[];
+var dataMaj = [];var dataInterm = [];var dataMin1 = [];var dataMin2 =[]; dataObjets
 app.controller("evenementMajeurCtrl",function($scope,$http){
     $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
         $scope.Evenementsmajeur= data;
@@ -136,6 +144,24 @@ app.controller("evenementmineurctrl2",function($scope,$http){
     $scope.select = {
         choices: dataMin1
     };
+
+});
+app.controller("objetEventsctrl",function($scope,$http){
+    $http.get('/patrimoine/rest/patrimoine/evenement').success(function (data) {
+        $scope.Objets= data;
+        dataObjets = data;
+        console.log(dataObjets);
+    });
+
+});
+app.controller("Eventctrl",function($scope,$http){
+    $scope.init = function (titreEvenement) {
+        $http.get('/patrimoine/rest/patrimoine/'+titreEvenement).success(function (data) {
+            $scope.Events= data;
+            dataObjecs = data;
+            console.log(dataObjets);
+        })
+    }
 
 });
 

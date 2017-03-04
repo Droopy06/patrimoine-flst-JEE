@@ -6,13 +6,16 @@
   <body>
   	<header th:include="patrimoine/PartialPages/_admin_header::content">
     </header>
+    <div ng-controller="evtsCtrl">
+      <script src="../../../static/scripts/mock/mockEvenements.js" th:src="@{/static/scripts/mock/mockEvenements.js}"></script>
 
-    <main ng-controller="EvenementsListCtrl as evtsCtrl">
+    <main>
       <div th:include="patrimoine/PartialPages/Contents/_admin_home::content">
       </div>
       <div th:include="patrimoine/PartialPages/_admin_hautFooter::content">
       </div>
     </main>
+      </div>
 
     <footer th:include="patrimoine/PartialPages/_footer::content">
     </footer>

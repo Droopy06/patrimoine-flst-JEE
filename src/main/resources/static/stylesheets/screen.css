@@ -118,6 +118,23 @@ h2 {
   color: #262626;
   font-size: 2em;
 }
+#collname{
+  font-family: 'Chromia';
+  color: #262626;
+  font-size: 0.80em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#collfamille{
+  font-family: 'Chromia';
+  color: #262626;
+  font-size: 0.80em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
 
 /* line 73, ../sass/screen.scss */
 h4 {
@@ -530,5 +547,6 @@ footer.page-footer {
 #newModal div .input-field label {
   cursor: help;
 }
+
 
 /*# sourceMappingURL=screen.css.map */
