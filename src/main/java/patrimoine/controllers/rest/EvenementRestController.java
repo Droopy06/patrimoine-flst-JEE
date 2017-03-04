@@ -26,7 +26,7 @@ public class EvenementRestController {
         this.evenementService = evenementService;
     }
 
-    @RequestMapping(value = "/evenements",method = RequestMethod.GET)
+    @RequestMapping(value = "/evenement",method = RequestMethod.GET)
     public List<Evenement> getAllEvenement(){
         return evenementService.findAll();
     }
@@ -35,4 +35,10 @@ public class EvenementRestController {
     public Evenement getEvenementById(@PathVariable("id") String id){
         return evenementService.findOne(id);
     }
+
+   /* @RequestMapping(value = "/evenement/{titre}",method = RequestMethod.GET)
+    public Evenement getEvenementByName(@PathVariable("titre") String titre){
+        return evenementService.findOne(id);
+    } */
+
 }
