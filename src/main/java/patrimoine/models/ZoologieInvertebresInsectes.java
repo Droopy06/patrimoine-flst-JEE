@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * Created by LAMOOT Alexandre on 25/11/2016.
  */
-@Document(collection = "Zoologieinvertebresinsectes")
+@Document(collection = "zoologieinvertebresinsectes")
 public class ZoologieInvertebresInsectes {
     private @Getter @Setter String id;
     private @Getter @Setter String picture;

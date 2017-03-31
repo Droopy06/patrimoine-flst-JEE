@@ -10,6 +10,7 @@ import java.util.List;
 public interface EvenementService {
     List<Evenement> findAll();
     Evenement findOne(String id);
+    List<Evenement> findOneByTitle(List<String> title);
     Evenement save(Evenement evenement);
     void delete(Evenement evenement);
 

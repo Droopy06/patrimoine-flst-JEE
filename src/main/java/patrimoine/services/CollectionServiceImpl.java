@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
+import patrimoine.helper.database.CustomSortCollection;
 import patrimoine.models.Collection;
 import patrimoine.dao.CollectionMapper;
 import sun.net.www.MimeTable;
@@ -24,7 +25,10 @@ public class CollectionServiceImpl implements CollectionService {
 
     @Override
     public List<Collection> findAllData() {
-        return collectionMapper.findAll();
+        List<Collection> collection = null;
+        collection = collectionMapper.findAll();
+        java.util.Collections.sort(collection,new CustomSortCollection());
+        return collection;
     }
 
     @Override

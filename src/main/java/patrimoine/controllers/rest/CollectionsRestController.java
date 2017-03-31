@@ -3,11 +3,14 @@ package patrimoine.controllers.rest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import patrimoine.helper.database.CustomSortCollection;
 import patrimoine.models.Collection;
+import patrimoine.models.Evenement;
 import patrimoine.models.Pedagogique;
 import patrimoine.services.CollectionService;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +25,9 @@ public class CollectionsRestController {
 
     @RequestMapping(value = "/collections",method = RequestMethod.GET)
     public List<Collection> getAllCollections(){
-        return collectionService.findAllData();
+        List<Collection> collections = null;
+        collections = collectionService.findAllData();
+         return collections;
     }
 
     @RequestMapping(value = "/collections/order",method = RequestMethod.GET)

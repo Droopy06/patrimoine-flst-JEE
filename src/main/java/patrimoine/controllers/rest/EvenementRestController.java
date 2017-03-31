@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import patrimoine.models.Evenement;
 import patrimoine.services.EvenementService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,7 +32,10 @@ public class EvenementRestController {
 
     @RequestMapping(value = "/evenement/{id}",method = RequestMethod.GET)
     public Evenement getEvenementById(@PathVariable("id") String id){
-        return evenementService.findOne(id);
+        List<String> evenements = new ArrayList<>();
+        evenements.add(id);
+        List<Evenement> evenement = evenementService.findOneByTitle(evenements);
+        return evenement.get(0);
     }
 
    /* @RequestMapping(value = "/evenement/{titre}",method = RequestMethod.GET)

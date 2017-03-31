@@ -1,0 +1,1 @@
+java -jar C:\Users\dev\Documents\GitHub\patrimoine-flst-JEE\target\musehome-0.1.0.jar
