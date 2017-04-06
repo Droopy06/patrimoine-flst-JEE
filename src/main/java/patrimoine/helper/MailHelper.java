@@ -14,7 +14,7 @@ import java.util.Properties;
 public class MailHelper {
     private final static String MAILER_VERSION = "Java";
     private static final String SMTP_AUTH_USER = "teamtfft@gmail.com";
-    private static final String SMTP_AUTH_PWD  = "droopy113020";
+    private static final String SMTP_AUTH_PWD  = "museh@me";
 
     public static boolean envoyerMailSMTP(String serveur,int port, boolean debug,Contact contact) {
         boolean result = false;
