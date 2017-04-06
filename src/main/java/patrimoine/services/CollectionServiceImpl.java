@@ -20,8 +20,12 @@ import java.util.List;
 @Service
 public class CollectionServiceImpl implements CollectionService {
 
+    private final CollectionMapper collectionMapper;
+
     @Autowired
-    CollectionMapper collectionMapper;
+    public CollectionServiceImpl(CollectionMapper collectionMapper) {
+        this.collectionMapper = collectionMapper;
+    }
 
     @Override
     public List<Collection> findAllData() {

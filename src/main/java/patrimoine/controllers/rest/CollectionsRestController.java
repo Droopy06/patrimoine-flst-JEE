@@ -20,8 +20,12 @@ import java.util.List;
 @RequestMapping("/rest/patrimoine")
 public class CollectionsRestController {
 
+    private final CollectionService collectionService;
+
     @Autowired
-    CollectionService collectionService;
+    public CollectionsRestController(CollectionService collectionService) {
+        this.collectionService = collectionService;
+    }
 
     @RequestMapping(value = "/collections",method = RequestMethod.GET)
     public List<Collection> getAllCollections(){

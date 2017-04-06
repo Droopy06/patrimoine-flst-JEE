@@ -11,6 +11,7 @@ public interface EvenementService {
     List<Evenement> findAll();
     Evenement findOne(String id);
     List<Evenement> findOneByTitle(List<String> title);
+    List<Evenement> findOneByPosition(List<Integer> postion);
     Evenement save(Evenement evenement);
     void delete(Evenement evenement);
 

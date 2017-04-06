@@ -37,11 +37,20 @@ public class EvenementServiceImpl implements EvenementService{
 
     @Override
     public List<Evenement> findOneByTitle(List<String> title) {
-        List<Evenement> evenements = null;
+        List<Evenement> evenements;
         Query query4 = new Query();
         query4.addCriteria(Criteria.where("titre").in(title));
         evenements = mongoOperations.find(query4, Evenement.class);
         evenements.sort(new CustomSortEvenements());
+        return evenements;
+    }
+
+    @Override
+    public List<Evenement> findOneByPosition(List<Integer> postion) {
+        List<Evenement> evenements;
+        Query query4 = new Query();
+        query4.addCriteria(Criteria.where("position").in(postion));
+        evenements = mongoOperations.find(query4, Evenement.class);
         return evenements;
     }
 

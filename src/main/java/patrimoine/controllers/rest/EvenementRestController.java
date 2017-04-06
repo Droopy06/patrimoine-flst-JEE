@@ -9,6 +9,7 @@ import patrimoine.models.Evenement;
 import patrimoine.services.EvenementService;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -27,7 +28,9 @@ public class EvenementRestController {
 
     @RequestMapping(value = "/evenements",method = RequestMethod.GET)
     public List<Evenement> getAllEvenements(){
-        return evenementService.findAll();
+        List<Evenement> evenements = evenementService.findAll();
+        Collections.reverse(evenements);
+        return evenements;
     }
 
     @RequestMapping(value = "/evenement/{id}",method = RequestMethod.GET)
@@ -35,6 +38,15 @@ public class EvenementRestController {
         List<String> evenements = new ArrayList<>();
         evenements.add(id);
         List<Evenement> evenement = evenementService.findOneByTitle(evenements);
+        return evenement.get(0);
+    }
+
+    @RequestMapping(value = "/evenement/position/{number}",method = RequestMethod.GET)
+    public Evenement getEvenementByPostion(@PathVariable("number") String number){
+        List<Integer> evenements = new ArrayList<>();
+        Integer position = Integer.parseInt(number);
+        evenements.add(position);
+        List<Evenement> evenement = evenementService.findOneByPosition(evenements);
         return evenement.get(0);
     }
 
