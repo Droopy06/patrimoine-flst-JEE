@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <form th:action="@{/admin/evenement/update}" th:object="${objet}" method="post" enctype="multipart/form-data">
+        <form th:action="@{/admin/evenement/update}" method="post" enctype="multipart/form-data">
         <div class="row">
             <div class="col l6 m6 s10 offset-s1">
                 <div class="card">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
                     <div class="textarea-field">
-                        <textarea id="minidescr" type="text" th:field="*{miniDescr}" class="validate">{{objet.miniDescr}}</textarea>
+                        <textarea id="minidescr" type="text" name="*{miniDescr}" class="validate">{{objet.miniDescr}}</textarea>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
                     <div class="input-field">
-                        <input value="{{objet.twitter}}" id="twitter" type="text" th:field="*{twitter}" class="validate"/>
+                        <input value="{{objet.twitter}}" id="twitter" type="text" name="*{twitter}" class="validate"/>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
                     <div class="input-field">
-                        <input value="{{objet.facebook}}" id="facebook" type="text" th:field="*{facebook}" class="validate"/>
+                        <input value="{{objet.facebook}}" id="facebook" type="text" name="*{facebook}" class="validate"/>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
                     <div class="input-field">
-                        <input value="{{objet.go}}" id="go" type="text" th:field="*{go}" class="validate"/>
+                        <input value="{{objet.go}}" id="go" type="text" name="*{go}" class="validate"/>
                     </div>
                 </div>
             </div>

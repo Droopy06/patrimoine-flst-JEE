@@ -54,9 +54,8 @@ public class AdminEventsController {
     }
     @RequestMapping(value = {"/admin/evenement/new"}, method = RequestMethod.POST)
     public ModelAndView createEvent(@ModelAttribute Evenement object,
-                                    @RequestParam("file") MultipartFile file,
                                     HttpSession httpSession){
-
+        object.setPosition(0);
         evenementService.save(object);
         HashMap<String, Object> model = new HashMap<>();
         return new ModelAndView("redirect:/admin/evenement",model);
