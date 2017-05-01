@@ -1,0 +1,25 @@
+404.html<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr" ng-app="sitePatrimoine">
+<head th:include="patrimoine/PartialPages/_head::content"></head>
+<body>
+<header class="header-content" th:include="patrimoine/PartialPages/_header::content">
+</header>
+<div>
+    <main>
+        <div class="row firstRow">
+            <div class="col l4 m4 offset-l4 offset-m4 s12">
+                <h1><i class="large material-icons">error</i>Erreur 403</h1>
+                <h2>Le serveur refuse le spécifié URL Uniform Resource Locator (). Contactez l’administrateur du serveur. (12202)
+                    Internet Security and Acceleration Server.</h2>
+            </div>
+        </div>
+
+        <div th:include="patrimoine/PartialPages/_admin_hautFooter::content">
+        </div>
+    </main>
+</div>
+
+<footer th:include="patrimoine/PartialPages/_footer::content">
+</footer>
+</body>
+</html>

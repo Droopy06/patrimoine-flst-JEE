@@ -8,7 +8,7 @@
     <script th:src="@{/scripts/mock/mockCollections.js}"></script>
     <div class="row" ng-repeat="Objet in Objets">
       <div class="col l2 m2 s4">
-        <a th:attr="href='/patrimoine/admin/collections/'+${nameCollection}+'/{{Objet.id}}'"><img class="responsive-img" th:attr="src='/patrimoine/images/Collections/'+${nameCollection}+'/{{Objet.picture}}'" alt="{{Objet.name}}" title="{{Objet.name}}"/></a>
+        <a th:attr="href='/patrimoine/admin/collections/'+${nameCollection}+'/{{Objet.id}}'"><img class="responsive-img" src="{{Objet.picture}}" alt="{{Objet.name}}" title="{{Objet.name}}"/></a>
       </div>
       <div class="col l10 m10 s8">
         <a th:attr="href='/patrimoine/admin/collections/'+${nameCollection}+'/{{Objet.id}}'"><h2>{{Objet.name}}</h2></a>
@@ -45,9 +45,17 @@
   **************************-->
   <!-- Modal nouvel objet -->
   <div id="newModal" class="modal">
-    <form th:action="@{/admin/collection/new}" th:object="${object}" method="post" enctype="multipart/form-data">
+    <form th:attr="action=''+${nameCollection}+'/new'" th:object="${object}" method="post">
       <div class="modal-content">
         <h1>Nouvel objet</h1>
+        <br/>
+        <div class="row">
+          <div class="input-field col l10 m10 s10">
+            <input id="id" type="text" th:field="*{id}" class="validate" required="required"/>
+            <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
+            <label class="active" for="titre" title="id sous lequel l'objet doit apparaître dans la collection">id de l'objet</label>
+          </div>
+        </div>
         <br/>
         <div class="row">
           <div class="input-field col l10 m10 s10">
@@ -57,17 +65,13 @@
           </div>
         </div>
         <br/>
+        <br/>
         <div class="row">
-          <div class="file-field input-field">
-            <div class="btn">
-              <span title="Photo de résolution 1000px * 1000px">Photo miniature</span>
-              <input type="file" name="file" id="file">
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text" required="required">
-            </div>
+          <div class="input-field col l10 m10 s10">
+            <input id="picture" type="text" th:field="*{picture}" class="validate" required="required"/>
+            <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
+            <label class="active" for="titre" title="photo sous laquelle l'objet doit apparaître dans la collection">lien de la photo de l'objet</label>
           </div>
-          <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
         </div>
       </div>
       <div class="modal-footer">

@@ -154,17 +154,16 @@ app.controller("objetEventsctrl",function($scope,$http){
     });
 
 });
+var dataObject;
 app.controller("Eventctrl",function($scope,$http){
-    $scope.init = function (titreEvenement) {
-        $http.get('/patrimoine/rest/patrimoine/evenements/'+titreEvenement).success(function (data) {
-            $scope.Events= data;
-            dataObjecs = data;
-            console.log(dataObjets);
+    $scope.init = function (titre) {
+        $http.get('/patrimoine/rest/patrimoine/evenement/'+titre).success(function (data) {
+            $scope.objet= data;
+            dataObject = data;
+            console.log(dataObjet);
         })
     }
-
 });
-
 /*----------------------------------------------------
  fin Mock des événements
  ------------------------------------------------------*/

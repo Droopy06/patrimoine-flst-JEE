@@ -1,773 +1,780 @@
 <div th:fragment="content">
-  <div ng-controller="collectionobjectctrl as collectionobjectctrl" th:attr="ng-init='init(\''+${nameCollection}+'\',\''+${object}+'\')'">
+  <div ng-controller="collectionobjectctrl as collectionobjectctrl" th:attr="ng-init='init(\''+${nameCollection}+'\',\''+${objectString}+'\')'">
     <script th:src="@{/scripts/mock/mockCollections.js}"></script>
-    <div class="row firstRow">
-      <div class="col l8 s12 offset-l2 titrePage">
-        <div class="input-field">
-          <input value="{{Objet.name}}" id="titre" type="text" class="validate center" required="required"/>
+    <form th:attr="action=''+${nameCollection}+'/update'" th:object="${object}" method="post">
+      <div class="row firstRow">
+        <div class="col l8 s12 offset-l2 titrePage">
+          <div class="input-field">
+            <input value="{{Objet.id}}" name="id" type="hidden" class="validate center" required="required"/>
+            <input value="{{Objet.name}}" name="name" type="text" class="validate center" required="required"/>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col l8 m8 s10 offset-s1">
-        <div class="card">
-          <a href="#modelisationModal" class="card-image waves-effect waves-block waves-light modal-trigger">
-            <img th:attr="src='/patrimoine/images/Collections/'+${nameCollection}+'/{{Objet.picture}}'" alt="{{Objet.picture}}"/>
-          </a>
+      <div class="row">
+        <div class="col l8 m8 s10 offset-s1">
+          <div class="card">
+            <a href="#modelisationModal" class="card-image waves-effect waves-block waves-light modal-trigger">
+              <img src="{{Objet.picture}}" alt="{{Objet.picture}}"/>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="col l4 m4 s6 offset-s3">
-        <div class="col l12 m12 s12">
-          <h2>{{Collection.groupe}}</h2>
-        </div>
-        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-          <div class="input-field">
-            <input value="{{Objet.groupe}}" id="nomCom" type="text" class="validate"/>
+        <div class="col l4 m4 s6 offset-s3">
+          <div class="col l12 m12 s12">
+            <h2>{{Collection.groupe}}</h2>
+          </div>
+          <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+            <div class="input-field">
+              <input value="{{Objet.groupe}}" name="groupe" type="text" class="validate"/>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col l4 m4 s6 offset-s3">
-        <div class="col l12 m12 s12">
-          <h2>{{Collection.kind}}</h2>
-        </div>
-        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-          <div class="input-field">
-            <input value="{{Objet.kind}}" id="nomSci" type="text" class="validate"/>
+        <div class="col l4 m4 s6 offset-s3">
+          <div class="col l12 m12 s12">
+            <h2>{{Collection.kind}}</h2>
+          </div>
+          <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+            <div class="input-field">
+              <input value="{{Objet.kind}}" name="kind" type="text" class="validate"/>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col l4 m4 s6 offset-s3">
-        <div class="col l12 m12 s12">
-          <h2>{{Collection.espece}}</h2>
-        </div>
-        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-          <div class="input-field">
-            <input value="{{Objet.espece}}" id="espece" type="text" class="validate"/>
+        <div class="col l4 m4 s6 offset-s3">
+          <div class="col l12 m12 s12">
+            <h2>{{Collection.espece}}</h2>
+          </div>
+          <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+            <div class="input-field">
+              <input value="{{Objet.espece}}" name="espece" type="text" class="validate"/>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col l4 m4 s6 offset-s3">
-        <div class="col l12 m12 s12">
-          <h2>{{Collection.author}}</h2>
-        </div>
-        <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-          <div class="input-field">
-            <input value="{{Objet.author}}" id="author" type="text" class="validate"/>
+        <div class="col l4 m4 s6 offset-s3">
+          <div class="col l12 m12 s12">
+            <h2>{{Collection.author}}</h2>
+          </div>
+          <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+            <div class="input-field">
+              <input value="{{Objet.author}}" name="author" type="text" class="validate"/>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe40}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          <!---->
-          <p>
-          <div class="input-field">
-            <textarea id="description1" class="materialize-textarea">{{Objet.annexe40}}</textarea>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe40}}</h2>
           </div>
-          </p>
+          <div class="col l8 m8 s6">
+            <!---->
+            <p>
+            <div class="input-field">
+              <textarea name="annexe40" class="materialize-textarea">{{Objet.annexe40}}</textarea>
+            </div>
+            </p>
 
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.year}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          <!---->
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.year}}" id="year" type="text" class="validate"/>
           </div>
-          </p>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.country}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.country}}" id="country" type="text" class="validate"/>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.year}}</h2>
           </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.city}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.city}}" id="city" type="text" class="validate"/>
+          <div class="col l8 m8 s6">
+            <!---->
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.year}}" name="year" type="text" class="validate"/>
+            </div>
+            </p>
           </div>
-          </p>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.place}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.place}}" id="place" type="text" class="validate"/>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.country}}</h2>
           </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.nameCollection}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.nameCollection}}" id="nameCollection" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.manifold}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.manifold}}" id="manifold" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.localization}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.localization}}" id="localization" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe1}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe1}}" id="annexe1" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe2}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe2}}" id="annexe2" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe3}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe3}}" id="annexe3" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe4}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe4}}" id="annexe4" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe5}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe5}}" id="annexe5" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe6}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe6}}" id="annexe6" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe7}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe7}}" id="annexe7" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe8}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe8}}" id="annexe8" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe9}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe9}}" id="annexe9" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe10}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe10}}" id="annexe10" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe11}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe11}}" id="annexe11" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe12}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe12}}" id="annexe12" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe13}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe13}}" id="annexe13" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe14}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe14}}" id="annexe14" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe15}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe15}}" id="annexe15" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe16}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe16}}" id="annexe16" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe17}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe17}}" id="annexe17" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe18}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe18}}" id="annexe18" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe19}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe19}}" id="annexe19" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe20}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe20}}" id="annexe20" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe21}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe21}}" id="annexe21" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe22}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe22}}" id="annexe22" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe23}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe23}}" id="annexe23" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe24}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe24}}" id="annexe24" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe25}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe25}}" id="annexe25" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe26}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe26}}" id="annexe26" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe27}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe27}}" id="annexe27" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe28}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe28}}" id="annexe28" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe29}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe29}}" id="annexe29" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe30}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe30}}" id="annexe30" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe31}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe31}}" id="annexe31" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe32}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe32}}" id="annexe32" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe33}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe33}}" id="annexe33" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe34}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe34}}" id="annexe34" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe35}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe35}}" id="annexe35" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe36}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe36}}" id="annexe36" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe37}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe37}}" id="annexe37" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe38}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe38}}" id="annexe38" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
-        <div class="col l4 m4 s6">
-          <h2>{{Collection.annexe39}}</h2>
-        </div>
-        <div class="col l8 m8 s6">
-          
-          <p>
-          <div class="input-field">
-            <input value="{{Objet.annexe39}}" id="annexe39" type="text" class="validate"/>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
+          <div class="col l8 m8 s6">
 
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.country}}" name="country" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.city}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.city}}" name="city" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.place}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.place}}" name="place" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.nameCollection}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.nameCollection}}" name="nameCollection" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.manifold}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.manifold}}" name="manifold" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.localization}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.localization}}" name="localization" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe1}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe1}}" name="annexe1" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe2}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe2}}" name="annexe2" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe3}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe3}}" name="annexe3" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe4}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe4}}" name="annexe4" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe5}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe5}}" name="annexe5" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe6}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe6}}" name="annexe6" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe7}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe7}}" name="annexe7" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe8}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe8}}" name="annexe8" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe9}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe9}}" name="annexe9" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe10}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe10}}" name="annexe10" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe11}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe11}}" name="annexe11" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe12}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe12}}" name="annexe12" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe13}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe13}}" name="annexe13" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe14}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe14}}" name="annexe14" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe15}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe15}}" name="annexe15" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe16}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe16}}" name="annexe16" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe17}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe17}}" name="annexe17" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe18}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe18}}" name="annexe18" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe19}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe19}}" name="annexe19" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe20}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe20}}" name="annexe20" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe21}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe21}}" name="annexe21" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe22}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe22}}" name="annexe22" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe23}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe23}}" name="annexe23" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe24}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe24}}" name="annexe24" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe25}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe25}}" name="annexe25" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe26}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe26}}" name="annexe26" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe27}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe27}}" name="annexe27" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe28}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe28}}" name="annexe28" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe29}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe29}}" name="annexe29" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe30}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe30}}" name="annexe30" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe31}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe31}}" name="annexe31" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe32}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe32}}" name="annexe32" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe33}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe33}}" name="annexe33" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe34}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe34}}" name="annexe34" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe35}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe35}}" name="annexe35" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe36}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe36}}" name="annexe36" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe37}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe37}}" name="annexe37" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe38}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe38}}" name="annexe38" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <div class="col l4 m4 s6">
+            <h2>{{Collection.annexe39}}</h2>
+          </div>
+          <div class="col l8 m8 s6">
+
+            <p>
+            <div class="input-field">
+              <input value="{{Objet.annexe39}}" name="annexe39" type="text" class="validate"/>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l8 offset-l2 m8 offest-m2 s10 offset-s1">
+          <input type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" value="Enregistrer"/>
+        </div>
+      </div>
+    </form>
     <!--*************************
               MODALS
     **************************-->

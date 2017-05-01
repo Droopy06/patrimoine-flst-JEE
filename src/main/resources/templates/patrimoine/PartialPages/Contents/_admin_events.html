@@ -8,10 +8,10 @@
         <script th:src="@{/scripts/mock/mockEvenements.js}"></script>
         <div class="row" ng-repeat="Objet in Objets">
             <div class="col l2 m2 s4">
-                <a href="#"><img class="responsive-img" th:src="@{/images/Evenements/evenement02mini.png}" alt="{{Objet.titre}}" title="{{Objet.titre}}"/></a>
+                <a th:attr="href='/patrimoine/admin/evenement/{{Objet.titre}}'"><img class="responsive-img" src="{{Objet.miniimageuri}}" alt="{{Objet.titre}}" title="{{Objet.titre}}"/></a>
             </div>
             <div class="col l10 m10 s8">
-                <a href="# "><h2>{{Objet.titre}}</h2></a>
+                <a th:attr="href='/patrimoine/admin/evenement/{{Objet.titre}}' "><h2>{{Objet.titre}}</h2></a>
                 <br/>
                 <p>
                     {{Objet.miniDescr}}
@@ -28,11 +28,10 @@
             <a href="#newModal" class="modal-trigger"><h2></h2></a>
             <br/>
             <p>
-                Cliquer sur cet objet pour en créer un nouveau.
+                Cliquer sur cet objet p créer nouvel Evenement.
             </p>
         </div>
     </div>
-
     <!--*************************
               MODALS
     **************************-->
@@ -40,16 +39,61 @@
     <div id="newModal" class="modal">
         <form th:action="@{/admin/evenement/new}" th:object="${object}" method="post" enctype="multipart/form-data">
             <div class="modal-content">
-                <h1>Nouvel objet</h1>
+                <h1>Nouvel Evenement</h1>
                 <br/>
                 <div class="row">
-                    <div class="input-field col l10 m10 s10">
+                    <div class="input-field col l12 m12 s12">
                         <input id="titre" type="text" th:field="*{titre}" class="validate" required="required"/>
                         <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
-                        <label class="active" for="titre" title="libéllé sous lequel l'objet doit apparaître dans la collection">titre de l'objet</label>
+                        <label class="active" for="titre" title="Titre de l'evenement">Titre de l'Evenement</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l12 m12 s12">
+                        <input id="minidescr" type="text" th:field="*{miniDescr}" class="validate"/>
+                        <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
+                        <label class="active" for="miniDescr" title="Description evenement">Description </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l12 m12 s12">
+                        <input id="twitter" type="text" th:field="*{twitter}" class="validate"/>
+                        <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
+                        <label class="active" for="twitter" title="Compte Twitter">Compte Twitter </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l12 m12 s12">
+                        <input id="facebook" type="text" th:field="*{facebook}" class="validate"/>
+                        <!--<input id="collection" type="hidden" value="pedagogique" th:field="*{collection}"/>-->
+                        <label class="active" for="facebook" title="Compte facebook">Compte facebook </label>
                     </div>
                 </div>
                 <br/>
+                <div class="row">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span title="Photo de résolution 1000px * 1000px">Url Image</span>
+                            <input type="file" name="file" id="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                    <!-- <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>-->
+                 </div>
+                 <div class="row">
+                     <div class="file-field input-field">
+                         <div class="btn">
+                             <span title="Photo de résolution 1000px * 1000px">Url image miniaturisé</span>
+                             <input type="file" name="file" id="file">
+                         </div>
+                         <div class="file-path-wrapper">
+                             <input class="file-path validate" type="text">
+                         </div>
+                     </div>
+                    <!-- <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>-->
+                </div>
             </div>
             <div class="modal-footer">
                 <input type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" value="Enregistrer"/>
