@@ -1,109 +1,111 @@
 <div th:fragment="content">
     <div ng-controller="Eventctrl" th:attr="ng-init='init(\''+${titre}+'\')'">
         <script th:src="@{/scripts/mock/mockEvenements.js}"></script>
-        <div class="row firstRow">
-            <div class="col l8 s12 offset-l2 titrePage">
-                <div class="input-field">
-                    <input value="{{objet.titre}}" id="titre" type="text" class="validate center" required="required"/>
-                </div>
-            </div>
-        </div>
-        <form th:action="@{/admin/evenement/update}" method="post" enctype="multipart/form-data">
-        <div class="row">
-            <div class="col l6 m6 s10 offset-s1">
-                <div class="card">
-                    <a href="#modelisationModal" class="card-image waves-effect waves-block waves-light modal-trigger">
-                        <img class="responsive-img" src="{{objet.miniimageuri}}" alt="{{objet.titre}}" title="{{objet.titre}}"/>
-                    </a>
-                </div>
-            </div>
 
-            <div class="col l6 m6 s6 offset-s3">
-                <div class="col l12 m12 s12">
-                    <h2>Description Evenement :</h2>
-                </div>
-                <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-                    <div class="textarea-field">
-                        <textarea id="minidescr" type="text" name="*{miniDescr}" class="validate">{{objet.miniDescr}}</textarea>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col l4 m4 s6 offset-s3">
-                <div class="col l12 m12 s12">
-                    <h2> Compte twitter </h2>
-                </div>
-                <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+        <form th:action="@{/admin/evenement/update}" method="post">
+            <div class="row firstRow">
+                <div class="col l8 s12 offset-l2 titrePage">
                     <div class="input-field">
-                        <input value="{{objet.twitter}}" id="twitter" type="text" name="*{twitter}" class="validate"/>
+                        <input value="{{objet.id}}" name="id" type="hidden"/>
+                        <input value="{{objet.titre}}" name="titre" type="text" class="validate center" required="required"/>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col l6 m6 s10 offset-s1">
+                    <div class="card">
+                        <a href="#modelisationModal" class="card-image waves-effect waves-block waves-light modal-trigger">
+                            <img class="responsive-img" src="{{objet.miniimageuri}}" alt="{{objet.titre}}" title="{{objet.titre}}"/>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="col l4 m4 s6 offset-s3">
-                <div class="col l12 m12 s12">
-                    <h2>Compte facebook</h2>
-                </div>
-                <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-                    <div class="input-field">
-                        <input value="{{objet.facebook}}" id="facebook" type="text" name="*{facebook}" class="validate"/>
+                <div class="col l6 m6 s6 offset-s3">
+                    <div class="col l12 m12 s12">
+                        <h2>Description Evenement :</h2>
+                    </div>
+                    <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+                        <div class="textarea-field">
+                            <textarea id="minidescr" type="text" name="miniDescr" class="validate">{{objet.miniDescr}}</textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col l4 m4 s6 offset-s3">
-                <div class="col l12 m12 s12">
-                    <h2>Go</h2>
+                <div class="col l4 m4 s6 offset-s3">
+                    <div class="col l12 m12 s12">
+                        <h2> Compte twitter </h2>
+                    </div>
+                    <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+                        <div class="input-field">
+                            <input value="{{objet.twitter}}" id="twitter" type="text" name="twitter" class="validate"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
-                    <div class="input-field">
-                        <input value="{{objet.go}}" id="go" type="text" name="*{go}" class="validate"/>
+
+                <div class="col l4 m4 s6 offset-s3">
+                    <div class="col l12 m12 s12">
+                        <h2>Compte facebook</h2>
+                    </div>
+                    <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+                        <div class="input-field">
+                            <input value="{{objet.facebook}}" id="facebook" type="text" name="facebook" class="validate"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l4 m4 s6 offset-s3">
+                    <div class="col l12 m12 s12">
+                        <h2>Go</h2>
+                    </div>
+                    <div class="col l11 m11 s11 offset-l1 offset-m1 offset-s1">
+                        <div class="input-field">
+                            <input value="{{objet.go}}" id="go" type="text" name="go" class="validate"/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <div class="modal-footer">
                 <input type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" value="Enregistrer"/>
                 <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
             </div>
-    </form>
+        </form>
     </div>
 
-        <!--*************************
-                  MODALS
-        **************************-->
-        <!-- Modal Modelisation -->
-        <div id="modelisationModal" class="modal" ng-controller="Objet as Objet">
-            <div class="modal-content">
-                <h1>Imagerie</h1>
+    <!--*************************
+              MODALS
+    **************************-->
+    <!-- Modal Modelisation -->
+    <div id="modelisationModal" class="modal" ng-controller="Objet as Objet">
+        <div class="modal-content">
+            <h1>Imagerie</h1>
 
-                <div class="row">
-                    <div class="input-field col l10 m10 s10">
-                        <input value="{{Objet.picture}}" id="titre_modal" type="text" class="validate">
-                        <label class="active" for="titre">Adresse de la modélisation</label>
-                    </div>
-                </div>
-                <p class="modalCare" title="Aller sur la page de la modélisation sur sketchfab, copier l'url de la modélisation, coller là dans le champs ci-dessus et ajouter '/embed' à la fin."><i class="small material-icons attention">report_problem</i> N'oubliez pas le '/embed' à la fin de l'url de la page de votre modélisation!!!</p>
-
-                <div class="row">
-                    <div class="file-field input-field">
-                        <div class="btn">
-                            <span>Photo miniature</span>
-                            <input type="file">
-                        </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" required="required">
-                        </div>
-                    </div>
-                    <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
+            <div class="row">
+                <div class="input-field col l10 m10 s10">
+                    <input value="{{Objet.picture}}" id="titre_modal" type="text" class="validate">
+                    <label class="active" for="titre">Adresse de la modélisation</label>
                 </div>
             </div>
-            <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
-                <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+            <p class="modalCare" title="Aller sur la page de la modélisation sur sketchfab, copier l'url de la modélisation, coller là dans le champs ci-dessus et ajouter '/embed' à la fin."><i class="small material-icons attention">report_problem</i> N'oubliez pas le '/embed' à la fin de l'url de la page de votre modélisation!!!</p>
+
+            <div class="row">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>Photo miniature</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" required="required">
+                    </div>
+                </div>
+                <p class="modalCare" title="Il est impératif pour le bon fonctionnement du site que cette condition soit respectée"><i class="small material-icons attention">report_problem</i> Photo de résolution 1000px * 1000px</p>
             </div>
         </div>
-        <!--*************************
-                  FIN MODALS
-        **************************-->
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enregistrer</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+        </div>
+    </div>
+    <!--*************************
+              FIN MODALS
+    **************************-->
 </div>

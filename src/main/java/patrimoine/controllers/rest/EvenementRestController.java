@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import patrimoine.helper.database.CustomSortEvenements;
 import patrimoine.models.Evenement;
 import patrimoine.services.EvenementService;
 
@@ -48,6 +49,13 @@ public class EvenementRestController {
         evenements.add(position);
         List<Evenement> evenement = evenementService.findOneByPosition(evenements);
         return evenement.get(0);
+    }
+
+    @RequestMapping(value = "/evenement/position/home",method = RequestMethod.GET)
+    public List<Evenement> getEvenementForHome(){
+        List<Evenement> evenements = evenementService.findEvenementsForHome();
+        Collections.sort(evenements,new CustomSortEvenements());
+        return evenements;
     }
 
    /* @RequestMapping(value = "/evenement/{titre}",method = RequestMethod.GET)

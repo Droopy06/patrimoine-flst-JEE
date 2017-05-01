@@ -12,6 +12,7 @@ public interface EvenementService {
     Evenement findOne(String id);
     List<Evenement> findOneByTitle(List<String> title);
     List<Evenement> findOneByPosition(List<Integer> postion);
+    List<Evenement> findEvenementsForHome();
     Evenement save(Evenement evenement);
     void delete(Evenement evenement);
 

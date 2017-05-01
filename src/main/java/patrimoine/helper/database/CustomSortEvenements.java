@@ -10,6 +10,6 @@ import java.util.Comparator;
 public class CustomSortEvenements implements Comparator<Evenement> {
     @Override
     public int compare(Evenement o1, Evenement o2) {
-        return o1.getTitre().compareTo(o2.getTitre());
+        return o1.getPosition().compareTo(o2.getPosition());
     }
 }

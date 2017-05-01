@@ -49,45 +49,48 @@ var evenement05 = {
     facebook: "#!",
     go: "#!",
 }
+var eventHome = [];
 var app= angular.module("sitePatrimoine",['ui.materialize']);
-app.controller("evtsCtrl",function($scope) {
-    $scope.titre1 = evenement01.titre;
-    $scope.miniDescr1 = evenement01.miniDescr;
-    $scope.imageuri1 = evenement01.imageuri;
-    $scope.miniimageuri1=evenement01.miniimageuri;
-    $scope.twitter1 = evenement01.twitter;
-    $scope.facebook1 = evenement01.facebook;
-    $scope.go1 = evenement01.go;
-    /*----------------------------------------------------
-      evenement02
-     ------------------------------------------------------*/
-    $scope.titre2 = evenement02.titre;
-    $scope.miniDescr2 = evenement02.miniDescr;
-    $scope.imageuri2 = evenement02.imageuri;
-    $scope.miniimageuri2=evenement02.miniimageuri;
-    $scope.twitter2 = evenement02.twitter;
-    $scope.facebook2 = evenement02.facebook;
-    $scope.go2 = evenement02.go;
-    /*----------------------------------------------------
-     evenement03
-     ------------------------------------------------------*/
-    $scope.titre3 = evenement03.titre;
-    $scope.miniDescr3 = evenement03.miniDescr;
-    $scope.imageuri3 = evenement03.imageuri;
-    $scope.miniimageuri3=evenement03.miniimageuri;
-    $scope.twitter3 = evenement03.twitter;
-    $scope.facebook3 = evenement03.facebook;
-    $scope.go3 = evenement03.go;
-    /*----------------------------------------------------
-     evenement04
-     ------------------------------------------------------*/
-    $scope.titre4 = evenement04.titre;
-    $scope.miniDescr4 = evenement04.miniDescr;
-    $scope.imageuri4 = evenement04.imageuri;
-    $scope.miniimageuri4=evenement04.miniimageuri;
-    $scope.twitter4 = evenement04.twitter;
-    $scope.facebook4 = evenement04.facebook;
-    $scope.go4 = evenement04.go;
+app.controller("evtsCtrl",function($scope,$http){
+    $http.get('/patrimoine/rest/patrimoine/evenement/position/home').success(function (data) {
+        $scope.titre1 = data[0].titre;
+        $scope.miniDescr1 = data[0].miniDescr;
+        $scope.imageuri1 = data[0].imageuri;
+        $scope.miniimageuri1=data[0].miniimageuri;
+        $scope.twitter1 = data[0].twitter;
+        $scope.facebook1 = data[0].facebook;
+        $scope.go1 = data[0].go;
+        /*----------------------------------------------------
+         evenement02
+         ------------------------------------------------------*/
+        $scope.titre2 = data[1].titre;
+        $scope.miniDescr2 = data[1].miniDescr;
+        $scope.imageuri2 = data[1].imageuri;
+        $scope.miniimageuri2=data[1].miniimageuri;
+        $scope.twitter2 = data[1].twitter;
+        $scope.facebook2 = data[1].facebook;
+        $scope.go2 = data[1].go;
+        /*----------------------------------------------------
+         evenement03
+         ------------------------------------------------------*/
+        $scope.titre3 = data[2].titre;
+        $scope.miniDescr3 = data[2].miniDescr;
+        $scope.imageuri3 = data[2].imageuri;
+        $scope.miniimageuri3=data[2].miniimageuri;
+        $scope.twitter3 = data[2].twitter;
+        $scope.facebook3 = data[2].facebook;
+        $scope.go3 = data[2].go
+        /*----------------------------------------------------
+         evenement04
+         ------------------------------------------------------*/
+        $scope.titre4 = data[3].titre;
+        $scope.miniDescr4 = data[3].miniDescr;
+        $scope.imageuri4 = data[3].imageuri;
+        $scope.miniimageuri4=data[3].miniimageuri;
+        $scope.twitter4 = data[3].twitter;
+        $scope.facebook4 = data[3].facebook;
+        $scope.go4 = data[3].go;
+    });
     /*----------------------------------------------------
      evenement05
      ------------------------------------------------------*/

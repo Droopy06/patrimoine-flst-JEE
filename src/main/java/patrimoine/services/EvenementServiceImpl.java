@@ -55,6 +55,15 @@ public class EvenementServiceImpl implements EvenementService{
     }
 
     @Override
+    public List<Evenement> findEvenementsForHome() {
+        List<Evenement> evenements;
+        Query query4 = new Query();
+        query4.addCriteria(Criteria.where("position").gt(0));
+        evenements = mongoOperations.find(query4, Evenement.class);
+        return evenements;
+    }
+
+    @Override
     public Evenement save(Evenement evenement) {
         return evenementMapper.save(evenement);
     }
